@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.edu.AddStaffActivity" android:orientation="vertical">
+    <include layout="@layout/toolbar_head"/>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_shape_recharge_white"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:layout_margin="@dimen/margin_10">
+
+
+        <TextView
+                android:text="员工信息"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_45"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_14"
+                android:textStyle="bold"/>
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_10"
+                      android:paddingRight="@dimen/paddingRight_10">>
+            <TextView
+                    android:text="姓名"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"/>
+            <EditText
+                    android:id="@+id/et_staffName"
+                    android:hint="请输入"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/text_size_13"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_10"
+                      android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="手机号"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"/>
+            <EditText
+                    android:id="@+id/et_staffPhone"
+                    android:hint="请输入"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/text_size_13"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_10"
+                      android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="性别"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"/>
+
+            <TextView
+                    android:id="@+id/tv_staffSex"
+                    android:text="请选择"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_10"
+                      android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="入职时间"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"/>
+            <TextView
+                    android:id="@+id/tv_staffEntryTime"
+                    android:text="请选择"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_10"
+                      android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="到期时间"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"/>
+
+            <TextView
+                    android:id="@+id/tv_staffArriveTime"
+                    android:text="请选择"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_10"
+                      android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="角色"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"/>
+
+            <TextView
+                    android:id="@+id/tv_staffRole"
+                    android:text="请选择"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_10"
+                      android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="权限"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"/>
+
+            <TextView
+                    android:id="@+id/tv_staffJurisdiction"
+                    android:text="请选择"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_10"
+                      android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="状态"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"/>
+
+            <TextView
+                    android:id="@+id/tv_staffState"
+                    android:text="请选择"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"/>
+    <TextView
+            android:id="@+id/tv_staffComplete"
+            android:text="完成"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_48"
+            android:textColor="@color/text_color_333333"
+            android:textSize="@dimen/text_size_15"
+            android:background="@color/background_yellow"
+            android:gravity="center"/>
+</LinearLayout>

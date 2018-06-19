@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background_f4f4f4"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        tools:context=".ui.activity.daily.CollegeDistributionActivity">
+
+    <FrameLayout
+            android:id="@+id/fl_collegeDisBg"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:paddingLeft="@dimen/paddingLeft_15"
+            android:background="@color/white">
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/default_head"
+                app:civ_border_color="#FF000000"/>
+
+        <TextView
+                android:id="@+id/tv_renewRemindName"
+                android:text="苏大牙"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/marginBottom_10"
+                android:layout_marginLeft="50dp"/>
+
+        <TextView
+                android:id="@+id/tv_renewRemindClassHour"
+                android:text="剩余课时 60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_11"
+                android:textColor="@color/text_color_a5a5a5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:layout_marginLeft="50dp"/>
+
+
+        <ImageView
+                android:id="@+id/check_renewRemind"
+                android:src="@mipmap/un_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+    <include layout="@layout/view_line_onedp"/>
+</LinearLayout>

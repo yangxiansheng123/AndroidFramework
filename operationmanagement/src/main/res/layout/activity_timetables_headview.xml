@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.edu.TimetablesActivity"
+        android:background="@color/background_f4f4f4"
+        android:gravity="center_vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:background="@drawable/solid_shape_white"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:layout_marginBottom="@dimen/marginBottom_10">
+
+        <TextView
+                android:text="课日程总数"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_13"
+                android:layout_marginLeft="@dimen/marginLeft_10"/>
+        <TextView
+                android:id="@+id/tv_totalSchedule"
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_13"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/marginRight_12"/>
+    </RelativeLayout>
+</LinearLayout>

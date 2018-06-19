@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="base_loading">"加载数据中..."</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+    <string name="action_edit">Edit</string>
+</resources>

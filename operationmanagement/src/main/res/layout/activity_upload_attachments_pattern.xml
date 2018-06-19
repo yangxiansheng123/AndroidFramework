@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.edu.ClassTimeSettingActivity" android:orientation="vertical">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_45"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:background="@color/white">
+
+        <ImageView
+                android:id="@+id/img_attachmentType"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/work_icon"
+                android:paddingTop="@dimen/paddingTop_10"
+                android:paddingBottom="@dimen/paddingBottom_10"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10"/>
+        <TextView
+                android:id="@+id/tv_attachmentName"
+                android:text="作业.pages"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/layout_height_45"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_13"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:id="@+id/tv_deleteAttachments"
+                android:text="删除"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/white"
+                android:paddingTop="4dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/marginLeft_10"
+                android:paddingRight="@dimen/paddingRight_10"
+                android:background="@drawable/solid_shape_rectangle_red"
+                android:layout_marginRight="@dimen/marginRight_13"/>
+
+    </LinearLayout>
+
+    <View
+          android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/background_f4f4f4"/>
+
+</LinearLayout>

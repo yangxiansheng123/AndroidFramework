@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_50"
+        tools:context=".ui.fragment.daily.CourseCIReadingStuFragment"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10">
+
+    <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/layout_height_50"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_12"
+            android:layout_weight="1">
+        <TextView
+                android:id="@+id/tv_signInName"
+                android:text="苏大牙"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:drawableRight="@mipmap/arrow_right"
+                android:drawablePadding="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/marginBottom_10"/>
+
+        <TextView
+                android:text="套餐剩余课时66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_10"
+                android:textColor="@color/text_color_a5a5a5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/marginTop_10"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center">
+
+        <TextView
+                android:text="-1.0课时"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:gravity="center"/>
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_right"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="@color/background_f4f4f4"/>
+
+        <TextView
+                android:text="缺席"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/textcolor_red"
+                android:layout_weight="1"
+                android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

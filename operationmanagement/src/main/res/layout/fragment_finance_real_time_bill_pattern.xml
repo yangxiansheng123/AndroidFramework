@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white"
+              tools:context=".ui.fragment.FinanceFragment">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_55"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+        <TextView
+                android:id="@+id/tv_rl_name"
+                android:text="张三"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_13"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginTop="@dimen/marginTop_5"/>
+
+        <TextView
+                android:text="学费收入"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_a5a5a5"
+                android:textSize="@dimen/text_size_10"
+                android:background="@drawable/stroke_shape_gray"
+                android:layout_marginTop="@dimen/marginTop_5"
+                android:paddingLeft="@dimen/paddingLeft_9"
+                android:paddingTop="3dp"
+                android:paddingRight="@dimen/paddingRight_7"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="2dp"
+        android:layout_marginRight="@dimen/marginRight_15"/>
+
+
+        <TextView
+                android:text="5000.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_ff8800"
+                android:textSize="@dimen/text_size_14"
+                android:layout_marginTop="@dimen/marginTop_5"
+                android:layout_gravity="right"
+                android:drawableRight="@mipmap/arrow_right"
+                android:drawablePadding="@dimen/drawablePadding_6"
+                android:layout_marginRight="@dimen/marginRight_12"/>
+
+
+        <TextView
+                android:text="销售人员：王小小 "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_a5a5a5"
+                android:textSize="@dimen/text_size_10"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginTop="@dimen/marginTop_30"/>
+
+        <TextView
+                android:text="绩效提成：500元  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_a5a5a5"
+                android:textSize="@dimen/text_size_10"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/marginTop_30"/>
+
+
+        <TextView
+                android:text="2018.04.23  17:42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_a5a5a5"
+                android:textSize="@dimen/text_size_10"
+                android:layout_marginTop="@dimen/marginTop_30"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/marginRight_12"/>
+    </FrameLayout>
+    <include layout="@layout/view_line_onedp"/>
+</LinearLayout>

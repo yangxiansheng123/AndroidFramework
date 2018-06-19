@@ -1,0 +1,50 @@
+//toolbar说明  使用
+
+  protected void initToolbar(ToolbarHelper toolbarHelper) {
+        toolbarHelper.setTitle("学员管理");
+
+        Toolbar toolbar = toolbarHelper.getToolbar();
+
+        // 显示应用的Logo
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setDisplayUseLogoEnabled(true);
+//        getSupportActionBar().setLogo(R.mipmap.ic_launcher);
+
+        // 显示标题和子标题
+//        getSupportActionBar().setDisplayShowTitleEnabled(true);
+//        toolbar.setTitle("ToolbarDemo");
+//        toolbar.setSubtitle("the detail of toolbar");
+
+        // 显示导航按钮
+        toolbar.setNavigationIcon(R.mipmap.left_back);
+    }
+
+    2.
+    activity重写方法:
+      @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+            getMenuInflater().inflate(R.menu.menu_toolbar_demo, menu);
+            return true;
+        }
+
+        @Override
+        public boolean onOptionsItemSelected(MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.toolbar_action1:
+                    // do something
+                    return true;
+                default:
+                    // If we got here, the user's action was not recognized.
+                    // Invoke the superclass to handle it.
+                    return super.onOptionsItemSelected(item);
+
+            }
+        }
+
+        对应的activity 重写方法控制对应的menu显示与隐藏：
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        menu.findItem(R.id.toolbar_action1).setVisible(false);
+        return super.onPrepareOptionsMenu(menu);
+    }

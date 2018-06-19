@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.fragment.EducationalAdminFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_shape_white"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_10">
+        <TextView
+                android:id="@+id/tv_studentManage"
+                android:text="学员管理"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:drawableLeft="@mipmap/student_s"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/drawablePadding_10"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:drawableRight="@mipmap/arrow_right"
+                android:paddingRight="@dimen/paddingRight_13"
+                android:textSize="@dimen/text_size_13"/>
+
+
+        <TextView
+                android:id="@+id/tv_classManage"
+                android:text="班级管理"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:drawableLeft="@mipmap/class_s"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/drawablePadding_10"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:drawableRight="@mipmap/arrow_right"
+                android:paddingRight="@dimen/paddingRight_13"
+                android:textSize="@dimen/text_size_13"/>
+
+        <TextView
+                android:id="@+id/tv_timetable"
+                android:text="总课表"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:drawableLeft="@mipmap/all_course"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/drawablePadding_10"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:drawableRight="@mipmap/arrow_right"
+                android:paddingRight="@dimen/paddingRight_13"
+                android:textSize="@dimen/text_size_13"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_shape_white"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10">
+        <TextView
+                android:id="@+id/tv_employeeManage"
+                android:text="员工管理"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:drawableLeft="@mipmap/staff_icon"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/drawablePadding_10"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:drawableRight="@mipmap/arrow_right"
+                android:paddingRight="@dimen/paddingRight_13"
+                android:textSize="@dimen/text_size_13"/>
+
+        <TextView
+                android:id="@+id/tv_contractManage"
+                android:text="合同管理"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:drawableLeft="@mipmap/contract"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/drawablePadding_10"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:drawableRight="@mipmap/arrow_right"
+                android:paddingRight="@dimen/paddingRight_13"
+                android:textSize="@dimen/text_size_13"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_classroomManage"
+            android:text="教室管理"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:drawableLeft="@mipmap/classroom"
+            android:gravity="center_vertical"
+            android:drawablePadding="@dimen/drawablePadding_10"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:drawableRight="@mipmap/arrow_right"
+            android:paddingRight="@dimen/paddingRight_13"
+            android:textSize="@dimen/text_size_13"
+            android:background="@drawable/solid_shape_white"
+            android:layout_margin="@dimen/margin_10"/>
+    <View android:layout_width="match_parent"
+          android:layout_height="180dp"
+          android:background="@color/background_f4f4f4"/>
+</LinearLayout>

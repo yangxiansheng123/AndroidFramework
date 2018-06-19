@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.daily.HomeworkDetailsActivity" android:orientation="vertical">
+    <include layout="@layout/toolbar_head_text_right_img"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.view.MultiStateView
+                android:id="@+id/multiStateView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:msv_emptyView="@layout/empty_view"
+                app:msv_errorView="@layout/error_view"
+                app:msv_loadingView="@layout/loading_view"
+                android:layout_above="@+id/ll_bottom"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginRight="@dimen/marginRight_10">
+
+            <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+                    android:id="@+id/swipe_to_load"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background_f4f4f4">
+
+                <include
+                        android:id="@id/swipe_refresh_header"
+                        layout="@layout/layout_twitter_header"/>
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@id/swipe_target"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/marginTop_10"/>
+
+                <include
+                        android:id="@id/swipe_load_more_footer"
+                        layout="@layout/layout_classic_footer"/>
+
+
+            </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+        </com.view.MultiStateView>
+        <View android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"/>
+        <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_60"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                android:layout_alignParentBottom="true">
+            <TextView
+                    android:text="分数通知"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView23"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_12"
+                    android:textColor="@color/text_color_333333"
+                    android:drawableTop="@mipmap/notification"
+                    android:drawablePadding="@dimen/drawablePadding_6"
+                    android:gravity="center"/>
+            <TextView
+                    android:text="崔交作业"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView24"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_12"
+                    android:textColor="@color/text_color_333333"
+                    android:drawableTop="@mipmap/assignment"
+                    android:drawablePadding="@dimen/drawablePadding_6"
+                    android:gravity="center"/>
+            <TextView
+                    android:text="退回作业"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView22"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_12"
+                    android:textColor="@color/text_color_333333"
+                    android:drawableTop="@mipmap/back_work"
+                    android:drawablePadding="@dimen/drawablePadding_6"
+                    android:gravity="center"/>
+            <TextView
+                    android:text="批量批改"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView21"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_12"
+                    android:textColor="@color/text_color_333333"
+                    android:drawableTop="@mipmap/modify_icon"
+                    android:drawablePadding="@dimen/drawablePadding_6"
+                    android:gravity="center"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

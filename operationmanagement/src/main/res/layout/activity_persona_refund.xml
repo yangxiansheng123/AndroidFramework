@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.fiance.PersonaRefundActivity"
+        android:orientation="vertical">
+    <include layout="@layout/toolbar_head"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tv_submitRefund">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/solid_shape_white"
+                        android:layout_margin="@dimen/margin_10">
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_50"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/paddingLeft_10"
+                            android:paddingRight="@dimen/paddingRight_10">
+                        <TextView
+                                android:text="学员"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                        <TextView
+                                android:id="@+id/tv_refundName"
+                                android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_onedp"/>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_50"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/paddingLeft_10"
+                            android:paddingRight="@dimen/paddingRight_10">
+                        <TextView
+                                android:text="退费原因"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                        <TextView
+                                android:id="@+id/tv_shortcutInput"
+                                android:text="快捷输入"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textSize="@dimen/text_size_13"
+                                android:gravity="center"
+                                android:textColor="@color/text_color_333333"
+                                android:drawableRight="@mipmap/shortcut_key_down"
+                                android:drawablePadding="@dimen/drawablePadding_6"/>
+                    </LinearLayout>
+
+                    <EditText
+                            android:id="@+id/et_refundReason"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_120"
+                            android:background="@color/background_f4f4f4"
+                            android:layout_marginBottom="@dimen/marginBottom_10"
+                            android:layout_marginLeft="@dimen/marginLeft_10"
+                            android:layout_marginRight="@dimen/marginRight_10"
+                            android:gravity="top|left"
+                            android:textColor="@color/text_color_333333"
+                            android:textSize="@dimen/text_size_13"
+                            android:paddingLeft="@dimen/paddingLeft_6"
+                            android:paddingTop="@dimen/paddingTop_6"
+                            android:lineSpacingMultiplier="1.2"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/solid_shape_white"
+                        android:layout_marginLeft="@dimen/marginLeft_10"
+                        android:layout_marginRight="@dimen/marginRight_10"
+                        android:layout_marginTop="@dimen/marginTop_10">
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_50"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/paddingLeft_10"
+                            android:paddingRight="@dimen/paddingRight_10">
+                        <TextView
+                                android:text="合同名"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                        <TextView
+                                android:id="@+id/tv_refundContract"
+                                android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_onedp"/>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_50"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/paddingLeft_10"
+                            android:paddingRight="@dimen/paddingRight_10">
+                        <TextView
+                                android:text="实收"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                        <TextView
+                                android:id="@+id/tv_refundIncome"
+                                android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                    </LinearLayout>
+
+
+                    <include layout="@layout/view_line_onedp"/>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_50"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/paddingLeft_10"
+                            android:paddingRight="@dimen/paddingRight_10">
+                        <TextView
+                                android:id="@+id/tv_refundSpareTime"
+                                android:text="剩余课时："
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                        <TextView
+                                android:id="@+id/tv_refundAmount"
+                                android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                    </LinearLayout>
+
+
+                    <include layout="@layout/view_line_onedp"/>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_50"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/paddingLeft_10"
+                            android:paddingRight="@dimen/paddingRight_10">
+                        <TextView
+                                android:id="@+id/tv_refundGiveClass"
+                                android:text="赠送课时："
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                        <TextView
+                                android:id="@+id/tv_refundGiveAmount"
+                                android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_onedp"/>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_50"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/paddingLeft_10"
+                            android:paddingRight="@dimen/paddingRight_10">
+                        <TextView
+                                android:text="课时退款"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:gravity="center"
+                                android:textColor="@color/text_color_333333"/>
+
+                        <EditText
+                                android:id="@+id/et_classRefund"
+                                android:text=""
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:textSize="@dimen/text_size_13"
+                                android:gravity="center"
+                                android:layout_marginBottom="@dimen/marginBottom_10"
+                                android:background="@drawable/edittext_bg_selector"
+                                android:textCursorDrawable="@drawable/solid_shape_bottom_line"
+                                android:textColor="@color/text_color_333333"/>
+                        <TextView
+                                android:text="元"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_onedp"/>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_50"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/paddingLeft_10"
+                            android:paddingRight="@dimen/paddingRight_10">
+                        <TextView
+                                android:text="扣除优惠"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+
+
+
+                        <EditText
+                                android:id="@+id/et_refundDeductions"
+                                android:text=""
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" android:background="@drawable/edittext_bg_selector"
+                                android:textCursorDrawable="@drawable/solid_shape_bottom_line"
+                                android:textSize="@dimen/text_size_13"
+                                android:layout_marginBottom="@dimen/marginBottom_10"
+                                android:textColor="@color/text_color_333333"/>
+                        <TextView
+                                android:text="元"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_onedp"/>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_50"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/paddingLeft_10"
+                            android:paddingRight="@dimen/paddingRight_10">
+                        <TextView
+                                android:text="违约金额"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+
+                        <EditText
+                                android:id="@+id/et_amountBreachOfContract"
+                                android:text=""
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center" android:background="@drawable/edittext_bg_selector"
+                                android:textCursorDrawable="@drawable/solid_shape_bottom_line"
+                                android:textSize="@dimen/text_size_13"
+                                android:layout_marginBottom="@dimen/marginBottom_10"
+                                android:textColor="@color/text_color_333333"/>
+                        <TextView
+                                android:text="元"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                    </LinearLayout>
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_50"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/paddingLeft_10"
+                            android:paddingRight="@dimen/paddingRight_10"
+                            android:background="@color/background_f4f4f4">
+                        <TextView
+                                android:text="合计退款："
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right|center"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+
+                        <TextView
+                                android:id="@+id/tv_totalAmount"
+                                android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/textcolor_red"/>
+                        <TextView
+                                android:text="元"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/marginTop_10"
+                        android:layout_above="@+id/tv_complete"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="@dimen/margin_10"
+                        android:background="@drawable/solid_shape_recharge_white">
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_45"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/paddingLeft_10">
+
+                        <TextView
+                                android:text="责任扣费"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/layout_height_45"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/text_color_333333"
+                                android:textSize="@dimen/text_size_13"
+                                android:textStyle="bold"
+                                android:layout_weight="1"
+                                android:typeface="normal"/>
+
+                        <ImageView
+                                android:id="@+id/img_liabilityDeduction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/add_responsibility"
+                                android:padding="12dp"/>
+                    </LinearLayout>
+
+                    <include layout="@layout/view_line_onedp"/>
+
+                    <com.example.administrator.oper.ui.widget.MyListView
+                            android:id="@+id/lv_liabilityDeduction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:dividerHeight="0dp"
+                            android:scrollbars="none"
+                            android:cacheColorHint="@color/background_00000000"
+                            android:divider="@color/background_00000000"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <TextView
+                android:id="@+id/tv_submitRefund"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:text="提交退费"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_14"
+                android:background="@color/background_yellow"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

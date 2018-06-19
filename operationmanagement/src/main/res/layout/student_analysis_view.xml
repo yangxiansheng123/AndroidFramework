@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".ui.fragment.AnalysisFragment">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:layout_height="@dimen/layout_height_50"
+            android:layout_marginTop="@dimen/marginTop_10">
+        <TextView
+                android:text="-  学员分析"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/textcolor_20e8d1"/>
+
+        <TextView
+                android:id="@+id/tv_analysisSelectStartTime"
+                android:text="2018年5月5日"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_height_26"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/drawablePadding_6"
+                android:drawableRight="@mipmap/analysisi_down"
+                android:layout_marginLeft="@dimen/marginLeft_20"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:background="#157bed"
+                android:paddingRight="@dimen/paddingRight_10"
+                android:paddingLeft="@dimen/paddingLeft_10"/>
+        <TextView
+                android:id="@+id/tv_analysisSelectTime"
+                android:text="2018年5月5日"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_height_26"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/drawablePadding_6"
+                android:drawableRight="@mipmap/analysisi_down"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:background="#157bed"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:paddingRight="@dimen/paddingRight_10"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:layout_marginRight="@dimen/marginRight_10"/>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textcolor_20e8d1"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginTop="@dimen/marginTop_5"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="@dimen/marginTop_30">
+
+        <ImageView
+                android:src="@mipmap/triangle_one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView3"
+                android:layout_gravity="center"/>
+        <TextView
+                android:id="@+id/textView4"
+                android:text="新增：200人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="55dp"
+                android:layout_marginLeft="@dimen/marginLeft_15"/>
+
+        <TextView
+                android:text="跟进：180人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="@dimen/marginLeft_15"/>
+
+
+        <TextView
+                android:text="到访：100人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/marginLeft_15"/>
+
+
+        <TextView
+                android:text="试听：80人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/marginTop_16"
+                android:layout_marginLeft="@dimen/marginLeft_15"/>
+
+
+        <TextView
+                android:text="签约：50人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/marginTop_45"
+                android:layout_marginLeft="@dimen/marginLeft_15"/>
+        <!-- 右侧-->
+
+
+        <TextView
+                android:text="试听签约率85%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="@dimen/marginTop_30"
+                android:layout_marginRight="@dimen/marginRight_15"/>
+
+
+        <TextView
+                android:text="试听签约率85%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="@dimen/marginTop_5"
+                android:layout_marginRight="@dimen/marginRight_15"/>
+
+        <TextView
+                android:text="试听签约率85%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center|right"
+                android:layout_marginBottom="@dimen/marginBottom_20"
+                android:layout_marginRight="@dimen/marginRight_15"/>
+    </FrameLayout>
+    <TextView
+            android:text="· 邀约率偏高/低，学员精准度不错/需要提升
+· 到访试听率偏高/低，校区环境和老师的销售能力不错/
+   需要提升
+· 试听签约率偏高/低，试听课和销售能力不错/需要提升"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_13"
+            android:textColor="@color/textcolor_blue"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginTop="@dimen/marginTop_30"/>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".ui.fragment.finance.IncomeFragment"
+              android:orientation="vertical"
+              android:background="@color/background_f4f4f4">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/solid_shape_white_bootom_lright">
+
+        <LinearLayout
+                android:id="@+id/ll_incomeCategory"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="收入类别"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+            <TextView
+                    android:id="@+id/tv_incomeCategory"
+                    android:text="请选择"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_a5a5a5"/>
+        </LinearLayout>
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout
+                android:id="@+id/ll_incomeSubject"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="收入科目"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+            <TextView
+                    android:id="@+id/tv_incomeSubject"
+                    android:text="请选择"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_a5a5a5"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="收入金额"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+
+            <EditText
+                    android:id="@+id/et_incomeAmount"
+                    android:hint="请输入金额"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:background="@color/white"
+                    android:textColor="@color/text_color_a5a5a5"/>
+        </LinearLayout>
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <TextView
+                android:text="备注"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10"
+                android:gravity="center_vertical"/>
+
+        <EditText
+                android:id="@+id/et_incomeRemark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_150"
+                android:background="@color/background_f4f4f4"
+                android:layout_marginBottom="@dimen/marginBottom_10"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:gravity="top|left"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_13"
+                android:paddingLeft="@dimen/paddingLeft_6"
+                android:paddingTop="@dimen/paddingTop_6"
+                android:lineSpacingMultiplier="1.2"/>
+    </LinearLayout>
+
+    <View android:layout_width="wrap_content"
+          android:layout_height="0dp"
+          android:layout_weight="1"/>
+
+    <TextView
+            android:id="@+id/tv_complete"
+            android:text="@string/complte"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_48"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:background="@color/background_yellow"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/text_color_333333"/>
+
+
+</LinearLayout>

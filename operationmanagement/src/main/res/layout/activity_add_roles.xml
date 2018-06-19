@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.me.AddRolesActivity" android:orientation="vertical">
+    <include layout="@layout/toolbar_head"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/tv_complete">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout
+                    android:id="@+id/ll_studentDistribution"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_50"
+                    android:gravity="center"
+                    android:background="@drawable/solid_shape_white"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:paddingRight="@dimen/paddingRight_10"
+                    android:layout_margin="@dimen/margin_10">
+                <TextView
+                        android:text="角色名称"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/text_size_13"
+                        android:textColor="@color/text_color_333333"/>
+                <EditText android:layout_width="0dp"
+                          android:layout_height="match_parent"
+                          android:background="@null"
+                          android:layout_weight="1"
+                          android:hint="请输入"
+                          android:gravity="right|center"
+                          android:textSize="@dimen/text_size_13"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:background="@drawable/solid_shape_white"
+                          android:layout_marginLeft="@dimen/marginLeft_10"
+                          android:layout_marginRight="@dimen/marginRight_10">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_50"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="通用类"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/text_size_13"
+                            android:textStyle="bold"
+                            android:fontFamily="Typeface.SANS_SERI"
+                            android:textColor="@color/text_color_333333"/>
+                </LinearLayout>
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="敏感信息查看"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以查看家长的手机号码"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            android:id="@+id/check_weixin"
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginTop="@dimen/marginTop_10"
+                          android:background="@drawable/solid_shape_white"
+                          android:layout_marginLeft="@dimen/marginLeft_10"
+                          android:layout_marginRight="@dimen/marginRight_10">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_50"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="市场类"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/text_size_13"
+                            android:textStyle="bold"
+                            android:fontFamily="Typeface.SANS_SERI"
+                            android:textColor="@color/text_color_333333"/>
+                </LinearLayout>
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="录入客户"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以录入家长,学员的资料"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="修改客户"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以修改家长,学员的资料"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginTop="@dimen/marginTop_10"
+                          android:background="@drawable/solid_shape_white"
+                          android:layout_marginLeft="@dimen/marginLeft_10"
+                          android:layout_marginRight="@dimen/marginRight_10">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_50"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="销售类"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/text_size_13"
+                            android:textStyle="bold"
+                            android:fontFamily="Typeface.SANS_SERI"
+                            android:textColor="@color/text_color_333333"/>
+                </LinearLayout>
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="分配学员"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以把家长分配给销售顾问,处理续约提醒"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="修改学员"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以修改家长,学员的资料"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="安排试听课"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以安排试听课程"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="签约购课"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以为学员签约,签订合同"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginTop="@dimen/marginTop_10"
+                          android:background="@drawable/solid_shape_white"
+                          android:layout_marginLeft="@dimen/marginLeft_10"
+                          android:layout_marginRight="@dimen/marginRight_10">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_50"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="教务类"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/text_size_13"
+                            android:textStyle="bold"
+                            android:fontFamily="Typeface.SANS_SERI"
+                            android:textColor="@color/text_color_333333"/>
+                </LinearLayout>
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="排课"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以排课,管理班级"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="签到/请假"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="为学员,老师签到并提交签到表"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="作业管理"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以创建作业,发送作业通知,批改作业,退回等。"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="高级修改"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以修改已完成课日程,签到表及扣课信息"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginTop="@dimen/marginTop_10"
+                          android:background="@drawable/solid_shape_white"
+                          android:layout_marginLeft="@dimen/marginLeft_10"
+                          android:layout_marginRight="@dimen/marginRight_10">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_50"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="财务类"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/text_size_13"
+                            android:textStyle="bold"
+                            android:fontFamily="Typeface.SANS_SERI"
+                            android:textColor="@color/text_color_333333"/>
+                </LinearLayout>
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="运营分析"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以查看运营分析的所有数据"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="财务管理"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以查看财务结构,添加记录,工资表,学员退款等。"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginTop="@dimen/marginTop_10"
+                          android:background="@drawable/solid_shape_white"
+                          android:layout_marginLeft="@dimen/marginLeft_10"
+                          android:layout_marginRight="@dimen/marginRight_10">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_50"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="管理类"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/text_size_13"
+                            android:textStyle="bold"
+                            android:fontFamily="Typeface.SANS_SERI"
+                            android:textColor="@color/text_color_333333"/>
+                </LinearLayout>
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="员工管理"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以添加,删除员工,安排工作交接等。"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="基础数据管理"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以管理系统基础数据信息"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="高级删除"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以删除家长,学员,班级,合同等"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="合同管理"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+                    <TextView
+                            android:text="可以修改合同,撤销合同手动调整课时"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="@dimen/marginTop_12"/>
+                    <CheckBox
+                            style="@style/CustomCheckBoxTheme"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical|right"/>
+                </FrameLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+
+            </LinearLayout>
+            <include layout="@layout/view_line_tendp"/>
+            <TextView
+                    android:text="完成"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_48"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_14"
+                    android:gravity="center"
+                    android:background="@color/background_yellow"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

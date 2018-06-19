@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.edu.CourseArrangementListActivity"
+        android:orientation="vertical"
+        android:background="@color/background_f4f4f4">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".ui.activity.edu.CourseArrangementListActivity"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginBottom="@dimen/marginBottom_10"
+            android:background="@drawable/solid_shape_white">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:gravity="center_vertical">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/calendar"
+                    android:id="@+id/imageView8"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+            <TextView
+                    android:id="@+id/tv_calTime"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/textcolor_blue"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+            <TextView
+                    android:text="●"
+                    android:textColor="#ffbd0e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tv_calIsStartCourse"
+                    android:text="未开始"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textcolor_yellow"
+                    android:textSize="@dimen/text_size_11"
+                    android:paddingRight="@dimen/paddingRight_12"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+        </LinearLayout>
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/marginTop_15">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/teacher_icon"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+            <TextView
+                    android:id="@+id/tv_calTeacher"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_11"
+                    android:textColor="@color/text_color_a5a5a5"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/class_room"/>
+            <TextView
+                    android:id="@+id/tv_calClassroom"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_11"
+                    android:textColor="@color/text_color_a5a5a5"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:layout_marginBottom="@dimen/marginBottom_15">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/attendance_arrage"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+            <TextView
+                    android:id="@+id/tv_calAttendance"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_11"
+                    android:textColor="@color/text_color_a5a5a5"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

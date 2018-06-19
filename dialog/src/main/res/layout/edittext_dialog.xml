@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/solid_shape_recharge_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/solid_rectangle_shape_orang_top_left_right"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#333333"
+            android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tv_subTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#ec2700"
+            android:textSize="13sp"/>
+
+        <EditText
+            android:id="@+id/et_inputName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="47dp"
+            android:background="@drawable/solid_rectangle_shape_gray"
+            android:hint="请输入您的姓名"
+            android:paddingLeft="15dp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"/>
+
+        <EditText
+            android:id="@+id/et_joinPhone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/solid_rectangle_shape_gray"
+            android:hint="请输入您的手机号"
+            android:paddingLeft="15dp"
+            android:textColor="#333333"
+            android:textColorHint="#999999"/>
+
+
+        <Button
+            android:id="@+id/btn_nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearLayout10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/solid_rectangle_shape_radius30"
+            android:text="下一步"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            android:layout_marginBottom="40dp"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

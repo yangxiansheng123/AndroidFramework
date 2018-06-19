@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.edu.AddMealActivity" android:orientation="vertical">
+    <include layout="@layout/toolbar_head"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_shape_recharge_white"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginTop="@dimen/marginTop_10">
+
+
+        <TextView
+                android:text="合同套餐"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_45"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/paddingLeft_16"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:textStyle="bold"/>
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_16">
+            <TextView
+                    android:text="合同名称"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+            <EditText
+                    android:id="@+id/et_contractName"
+                    android:hint="请输入"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginRight="@dimen/marginRight_16"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_16">
+            <TextView
+                    android:text="合同课时"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+            <EditText
+                    android:id="@+id/et_contractClassHour"
+                    android:hint="请输入"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginRight="@dimen/marginRight_16"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout
+                android:id="@+id/ll_selectCategory"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/paddingLeft_16">
+            <TextView
+                    android:text="选择分类"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+            <TextView
+                    android:id="@+id/tv_selectCategory"
+                    android:hint="请选择"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginRight="@dimen/marginRight_16"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_16">
+            <TextView
+                    android:text="赠送课时"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+            <EditText
+                    android:id="@+id/et_contractIncreasCh"
+                    android:hint="请输入"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginRight="@dimen/marginRight_16"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="@dimen/layout_height_50"
+                      android:orientation="horizontal"
+                      android:gravity="center_vertical"
+                      android:paddingLeft="@dimen/paddingLeft_16">
+            <TextView
+                    android:text="套餐价格"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+            <EditText
+                    android:id="@+id/et_contractPackagePrice"
+                    android:hint="请输入"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginRight="@dimen/marginRight_16"/>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_line_onedp"/>
+    </LinearLayout>
+    <View android:layout_width="1dp"
+          android:layout_height="0dp"
+          android:layout_weight="1"/>
+    <TextView
+            android:id="@+id/tv_complete"
+            android:text="完成"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/text_color_333333"
+            android:background="@color/background_yellow"
+            android:gravity="center"/>
+</LinearLayout>

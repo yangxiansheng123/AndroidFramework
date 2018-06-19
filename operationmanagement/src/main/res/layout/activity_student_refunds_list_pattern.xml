@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/solid_shape_white"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginTop="@dimen/marginTop_10"
+        tools:context=".ui.activity.fiance.StudentRefundsActivity">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_10"
+            android:paddingTop="@dimen/paddingTop_10">
+        <TextView
+                android:id="@+id/tv_refundTitle"
+                android:text="张大丫"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_13"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+        <TextView
+                android:id="@+id/tv_refundCTime"
+                android:text="已耗课时..."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+        <TextView
+                android:id="@+id/tv_refundContractName"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_AEAEAE"
+                android:textSize="@dimen/text_size_13"
+                android:layout_marginTop="@dimen/marginTop_8"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10"
+                android:layout_weight="1"/>
+        <TextView
+                android:id="@+id/tv_refundTeacherName"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_AEAEAE"
+                android:textSize="@dimen/text_size_13"
+                android:layout_marginTop="@dimen/marginTop_8"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:background="@drawable/solid_shape_f4_bottom_left_right"
+            android:gravity="center">
+        <TextView
+                android:id="@+id/tv_refundTuition"
+                android:text=""
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:gravity="left|center_vertical"/>
+
+        <TextView
+                android:id="@+id/tv_refundReceipts"
+                android:text="实收:25445"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:gravity="center"
+                android:paddingRight="@dimen/paddingRight_10"/>
+
+
+    </LinearLayout>
+</LinearLayout>

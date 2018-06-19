@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.edu.AddCassActivity"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+    <LinearLayout
+            android:id="@+id/ll_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/marginBottom_10"
+            android:layout_below="@+id/ll_head">
+
+        <TextView
+                android:text="添加快捷跟进"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/text_color_333333"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/marginLeft_20"
+                android:gravity="center_vertical"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_f4f4f4"/>
+        <TextView
+                android:id="@+id/tv_phoneFollowUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBottom_14"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:paddingRight="@dimen/paddingRight_17"
+                android:text="电话跟进"
+                android:layout_marginLeft="@dimen/marginLeft_20"
+                android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+                android:id="@+id/tv_wxFollowUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBottom_14"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:paddingRight="@dimen/paddingRight_17"
+                android:text="短信/微信"
+                android:layout_marginLeft="@dimen/marginLeft_20"
+                android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+                android:id="@+id/tv_shopFollowUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBottom_14"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:paddingRight="@dimen/paddingRight_17"
+                android:text="到店接待"
+                android:layout_marginLeft="@dimen/marginLeft_20"
+                android:textSize="@dimen/text_size_14"/>
+
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_f4f4f4"/>
+        <TextView
+                android:id="@+id/tv_otherFollowUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginBottom_14"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:paddingRight="@dimen/paddingRight_17"
+                android:text="其他"
+                android:layout_marginLeft="@dimen/marginLeft_20"
+                android:textSize="@dimen/text_size_14"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

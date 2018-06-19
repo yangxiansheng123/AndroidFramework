@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_50"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+    <TextView
+            android:text="全部学员"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_13"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/marginTop_15"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:textColor="@color/text_color_333333"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:background="@drawable/solid_shape_white_top_left_right"/>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_f4f4f4"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10"/>
+</LinearLayout>

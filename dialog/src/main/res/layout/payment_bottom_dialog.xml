@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/img_closeDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:src="@mipmap/cancel_payment" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确认付款"
+            android:textColor="@color/textcolor_black_221814"
+            android:textSize="@dimen/text_size_16" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/stroke_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="¥185.2"
+        android:textColor="@color/textcolor_black_221814"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="28dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/account_wechat" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="28dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="微信支付"
+                android:textColor="@color/textcolor_black_221814"
+                android:textSize="@dimen/text_size_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="推荐安装微信5.0以上版本的用户使用"
+                android:textColor="@color/textcolor_888888"
+                android:textSize="@dimen/text_size_11" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/check_weixin"
+            style="@style/CustomCheckBoxTheme"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="25dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="28dp"
+            android:src="@mipmap/account_alipay" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="支付宝支付"
+                android:textColor="@color/textcolor_black_221814"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="推荐安支付宝5.0以上版本的用户使用"
+                android:textColor="@color/textcolor_888888"
+                android:textSize="@dimen/text_size_11" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/chexb_alipay"
+            style="@style/CustomCheckBoxTheme"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="25dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_payment"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="109dp"
+        android:background="@drawable/solid_shape_yellow_bg"
+        android:gravity="center"
+        android:text="立即付款"
+        android:textColor="@color/textcolor_black_221814"
+        android:textSize="@dimen/text_size_16" />
+</LinearLayout>

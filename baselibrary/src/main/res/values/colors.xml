@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="gray">#8C8C8C</color>
+
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="hint_gray">#ffe6e6e6</color>
+    <color name="mask_color">#88888888</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="tab_select_color">#0000FF</color>
+    <color name="un_press_color">#fbd140</color>
+    <color name="text_color_000000">#000000</color>
+    <color name="background_f4f4f4">#f4f4f4</color>
+    <color name="background_157bed">#157bed</color>
+    <color name="background_F9F9F9">#F9F9F9</color>
+    <color name="background_00000000">#00000000</color>
+    <color name="textcolor_yellow">#fbd415</color>
+    <color name="text_color_8d8d8d">#8d8d8d</color>
+    <color name="text_color_333333">#333333</color>
+    <color name="text_color_a5a5a5">#a5a5a5</color>
+    <color name="text_color_888888">#888888</color>
+    <color name="background_yellow">#fbd415</color>
+    <color name="background_black">#313131</color>
+    <color name="textcolor_black">#163045</color>
+    <color name="textcolor_AEAEAE">#AEAEAE</color>
+    <color name="textcolor_red">#FE4C25</color>
+    <color name="textcolor_green">#059B05</color>
+    <color name="textcolor_999999">#999999</color>
+    <color name="textcolor_ff8208">#ff8208</color>
+    <color name="textcolor_blue">#3FA1FF</color>
+    <color name="textcolor_666666">#666666</color>
+    <color name="textcolor_20e8d1">#20e8d1</color>
+    <color name="textcolor_329fc8">#329fc8</color>
+    <color name="textcolor_3ed548">#3ed548</color>
+    <color name="textcolor_f39019">#f39019</color>
+    <color name="textcolor_a9a9a9">#a9a9a9</color>
+    <color name="textcolor_ff8800">#ff8800</color>
+    <color name="textcolor_bdbdbd">#bdbdbd</color>
+    <!-- 上啦加载-->
+    <color name="color_7a">#7a7a7a</color>
+    <color name="color_ab">#ababab</color>
+</resources>

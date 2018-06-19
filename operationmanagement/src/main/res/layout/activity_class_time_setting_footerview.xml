@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.edu.ClassTimeSettingActivity"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/paddingTop_10"
+            android:background="@drawable/solid_shape_white">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_45"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="上课周期"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/text_color_333333"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="开始日期"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+
+            <TextView
+                    android:id="@+id/tv_startTime"
+                    android:text="请选择"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"/>
+        </LinearLayout>
+
+        <include layout="@layout/view_line_onedp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="结束日期"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+
+            <TextView
+                    android:id="@+id/tv_endTime"
+                    android:text="请选择"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"/>
+        </LinearLayout>
+
+    </LinearLayout>
+   </LinearLayout>

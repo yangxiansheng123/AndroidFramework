@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.edu.AddOneToOneStudentsActivity"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+            android:id="@+id/ll_timesetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:id="@+id/tv_courseType"
+                    android:text="单次课"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:drawableRight="@mipmap/right_red"
+                    android:drawablePadding="@dimen/drawablePadding_11"
+                    android:textColor="@color/text_color_333333"/>
+
+            <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/layout_height_35"
+                    android:background="@color/background_f4f4f4"
+                    android:layout_marginLeft="@dimen/marginLeft_10"
+                    android:layout_marginRight="@dimen/marginRight_10"/>
+
+            <TextView
+                    android:id="@+id/tv_settingYMD"
+                    android:text="请选择日期"
+                    android:gravity="left|center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_weight="1"
+                    android:textColor="@color/textcolor_bdbdbd"/>
+            <ImageView
+                    android:id="@+id/img_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/del"/>
+        </LinearLayout>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:background="@color/background_f4f4f4"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingLeft_10"
+                android:paddingRight="@dimen/paddingRight_10">
+            <TextView
+                    android:text="教室"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"/>
+
+            <TextView
+                    android:id="@+id/tv_selectClassroom"
+                    android:text="请选择"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/textcolor_bdbdbd"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/view_line_onedp"/>-->
+
+</LinearLayout>

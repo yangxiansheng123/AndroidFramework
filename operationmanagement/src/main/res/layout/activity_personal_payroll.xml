@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.fiance.PersonalPayrollActivity">
+
+    <include layout="@layout/toolbar_head_text_right"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:background="@drawable/solid_shape_yellow"
+                          android:gravity="center_horizontal"
+                          android:layout_margin="@dimen/margin_10">
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+
+                    <ImageView
+                            android:id="@+id/me_imghead"
+                            android:src="@mipmap/default_head"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/marginLeft_20"/>
+                    <TextView
+                            android:id="@+id/tv_name"
+                            android:text="苏大牙"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="@dimen/marginBottom_15"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_marginLeft="100dp"/>
+                    <TextView
+                            android:id="@+id/tv_phone"
+                            android:text="1885666566"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="100dp"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"
+                            android:layout_marginTop="@dimen/marginTop_15"/>
+                    <TextView
+                            android:id="@+id/tv_editInfo"
+                            android:text="编辑"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="@dimen/marginRight_16"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/marginBottom_15"
+                            android:drawablePadding="@dimen/drawablePadding_6"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"/>
+                </FrameLayout>
+                <TextView
+                        android:id="@+id/tv_monthSalary"
+                        android:text="5月工资"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_12"
+                        android:textColor="@color/text_color_333333"
+                        android:paddingLeft="@dimen/paddingLeft_12"
+                        android:paddingTop="@dimen/paddingTop_5"
+                        android:paddingRight="@dimen/paddingRight_12"
+                        android:paddingBottom="@dimen/paddingBottom_5"
+                        android:background="@drawable/solid_shape_light_yellow"/>
+                <TextView
+                        android:id="@+id/tv_salary"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_20"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color_333333"
+                        android:layout_marginTop="@dimen/marginTop_10"
+                        android:layout_marginBottom="@dimen/marginBottom_20"/>
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bg_stroke"
+                        android:layout_marginLeft="@dimen/marginLeft_16"
+                        android:layout_marginRight="@dimen/marginRight_16"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/paddingBottom_20"
+                        android:layout_marginTop="@dimen/marginTop_10">
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                        <TextView
+                                android:text="固定薪资"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_10"
+                                android:textColor="@color/text_color_333333"
+                                android:paddingLeft="@dimen/paddingLeft_12"
+                                android:paddingTop="@dimen/paddingTop_5"
+                                android:paddingRight="@dimen/paddingRight_12"
+                                android:paddingBottom="@dimen/paddingBottom_5"
+                                android:background="@drawable/solid_shape_light_yellow"/>
+                        <TextView
+                                android:id="@+id/tv_fixedSalary"
+                                android:text="￥50000元"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"
+                                android:layout_marginTop="@dimen/marginTop_10"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="1dp"
+                          android:layout_height="match_parent"
+                          android:background="@color/bg_stroke"/>
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                        <TextView
+                                android:text="    提成    "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_10"
+                                android:textColor="@color/text_color_333333"
+                                android:paddingLeft="@dimen/paddingLeft_12"
+                                android:paddingTop="@dimen/paddingTop_5"
+                                android:paddingRight="@dimen/paddingRight_12"
+                                android:paddingBottom="@dimen/paddingBottom_5"
+                                android:background="@drawable/solid_shape_light_yellow"/>
+                        <TextView
+                                android:id="@+id/tv_extract"
+                                android:text="￥50000元"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"
+                                android:layout_marginTop="@dimen/marginTop_10"/>
+                    </LinearLayout>
+
+                    <View android:layout_width="1dp"
+                          android:layout_height="match_parent"
+                          android:background="@color/bg_stroke"/>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                        <TextView
+                                android:text="    责任    "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_10"
+                                android:textColor="@color/text_color_333333"
+                                android:paddingLeft="@dimen/paddingLeft_12"
+                                android:paddingTop="@dimen/paddingTop_5"
+                                android:paddingRight="@dimen/paddingRight_12"
+                                android:paddingBottom="@dimen/paddingBottom_5"
+                                android:background="@drawable/solid_shape_light_yellow"/>
+                        <TextView
+                                android:id="@+id/tv_responsibility"
+                                android:text="￥50000元"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/text_size_13"
+                                android:textColor="@color/text_color_333333"
+                                android:layout_marginTop="@dimen/marginTop_10"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                    android:id="@+id/tv_historySalary"
+                    android:text="历史工资"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_60"
+                    android:drawableLeft="@mipmap/payroll"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/drawablePadding_15"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/textcolor_blue"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:paddingRight="@dimen/paddingRight_13"
+                    android:visibility="gone"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/solid_shape_white"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/marginLeft_10"
+                    android:layout_marginRight="@dimen/marginRight_10"
+                    android:layout_marginTop="@dimen/marginTop_5"
+                    android:layout_marginBottom="@dimen/marginBottom_20">
+
+                <TextView
+                        android:id="@+id/tv_changeRecord"
+                        android:text="详细记录"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_50"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_13"
+                        android:textSize="@dimen/text_size_13"/>
+
+
+                <com.example.administrator.oper.ui.widget.MyListView
+                        android:id="@+id/lv_changRecord"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

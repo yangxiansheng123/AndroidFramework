@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:id="@+id/ll_selectMore"
+              android:background="@drawable/solid_shape_white_bootom_lright">
+
+    <TextView
+            android:text="查看更多"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_50"
+            android:textColor="@color/text_color_333333"
+            android:textSize="@dimen/text_size_13"
+            android:drawableRight="@mipmap/arrow_right"
+            android:gravity="center"
+            android:drawablePadding="@dimen/drawablePadding_8"/>
+</LinearLayout>

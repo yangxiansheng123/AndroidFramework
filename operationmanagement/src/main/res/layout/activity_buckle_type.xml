@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.edu.AddCassActivity"
+        android:orientation="vertical"
+        android:background="@drawable/solid_shape_white"
+        android:layout_margin="@dimen/marginTop_10">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_10">
+        <TextView
+                android:text="扣课类型"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/text_color_333333"
+                android:textStyle="bold"/>
+        <TextView
+                android:id="@+id/tv_closeDialog"
+                android:text="关闭"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/textcolor_yellow"
+                android:textSize="@dimen/text_size_13"/>
+    </LinearLayout>
+    <include layout="@layout/view_line_onedp"/>
+
+    <LinearLayout
+            android:id="@+id/ll_bukleOrder"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_60"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/paddingRight_10">
+        <TextView
+                android:text="按次扣课时"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+
+        <TextView
+                android:text="每次上课后扣除课时"
+                android:gravity="right|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_11"
+                android:layout_marginTop="@dimen/marginTop_5"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_line_onedp"/>
+
+    <LinearLayout
+            android:id="@+id/ll_bukleStage"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_60"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_10"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/marginBottom_5">
+        <TextView
+                android:text="按期扣课时"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+
+        <TextView
+                android:text="首次加入班级即扣除整期的课时"
+                android:gravity="right|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_5"
+                android:textSize="@dimen/text_size_11"/>
+    </LinearLayout>
+</LinearLayout>

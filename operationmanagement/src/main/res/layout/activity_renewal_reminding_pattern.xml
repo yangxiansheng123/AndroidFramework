@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.activity.daily.RenewalRemindingActivity"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginLeft="@dimen/marginLeft_10">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:paddingLeft="@dimen/paddingLeft_15"
+            android:background="@color/white">
+
+        <TextView
+                android:id="@+id/tv_renewRemindName"
+                android:text="苏大牙"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/marginBottom_10"/>
+
+        <TextView
+                android:id="@+id/tv_renewRemindClassHour"
+                android:text="剩余课时 60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_11"
+                android:textColor="@color/text_color_333333"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/marginTop_10"/>
+
+        <!-- 右-->
+
+        <TextView
+                android:id="@+id/tv_renewRemindTorF"
+                android:text="3岁5个月"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_a5a5a5"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginBottom="@dimen/marginBottom_10"
+                android:layout_marginRight="50dp"/>
+
+
+        <TextView
+                android:id="@+id/tv_renewRemindPhone"
+                android:text="18092820976  苏亚"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_11"
+                android:textColor="@color/text_color_a5a5a5"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:layout_marginRight="50dp"/>
+
+
+        <CheckBox
+                android:id="@+id/check_renewRemind"
+                style="@style/CustomCheckBoxTheme"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+
+    <include layout="@layout/view_line_onedp"/>
+</LinearLayout>

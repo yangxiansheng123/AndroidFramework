@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.edu.FollowUpRecordActivity"
+        android:orientation="vertical"
+        android:background="@color/background_f4f4f4">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginBottom="@dimen/marginBottom_10"
+            android:background="@drawable/solid_shape_white">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_35"
+                android:gravity="center_vertical"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp">
+            <TextView
+                    android:id="@+id/tv_followCount"
+                    android:text="第二次跟进"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_13"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color_333333"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow_right"
+                    android:id="@+id/imageView4"
+                    android:layout_marginRight="@dimen/marginRight_13"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_35"
+                android:gravity="center_vertical">
+            <TextView
+                    android:text="跟进方式："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginLeft="@dimen/marginLeft_15"
+                    android:textColor="@color/textcolor_999999"/>
+
+            <TextView
+                    android:id="@+id/tv_followRecordM"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginLeft="@dimen/marginLeft_10"
+                    android:textColor="@color/text_color_333333"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+            <TextView
+                    android:text="沟通结果："
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginLeft="@dimen/marginLeft_15"
+                    android:textColor="@color/textcolor_999999"
+                    android:gravity="left|top"/>
+            <TextView
+                    android:id="@+id/tv_communicationResults"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_35"
+                android:gravity="center_vertical">
+            <TextView
+                    android:text="下次跟进："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginLeft="@dimen/marginLeft_15"
+                    android:textColor="@color/textcolor_999999"/>
+            <TextView
+                    android:id="@+id/tv_nextFollowUp"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_marginLeft="@dimen/marginLeft_10"
+                    android:textColor="@color/textcolor_red"/>
+        </LinearLayout>
+
+        <include layout="@layout/view_line_onedp"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_35"
+                android:gravity="center_vertical">
+            <TextView
+                    android:id="@+id/tv_followTime"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/marginLeft_15"
+                    android:textColor="@color/textcolor_999999"/>
+
+            <TextView
+                    android:id="@+id/tv_followPerson"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_color_333333"
+                    android:layout_marginRight="@dimen/marginRight_12"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.daily.CollegeDistributionActivity">
+
+    <include layout="@layout/toolbar_head"/>
+
+    <LinearLayout
+            android:id="@+id/ll_salesConsultant"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center"
+            android:background="@drawable/solid_shape_white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_10"
+            android:layout_margin="@dimen/margin_10">
+        <TextView
+                android:text="销售顾问"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+        <TextView
+                android:id="@+id/tv_salesConsultant"
+                android:text="请选择"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_13"
+                android:gravity="center_vertical"
+                android:drawableRight="@mipmap/arrow_right"
+                android:drawablePadding="@dimen/drawablePadding_6"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.view.MultiStateView
+                android:id="@+id/multiStateView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:msv_emptyView="@layout/empty_view"
+                app:msv_errorView="@layout/error_view"
+                app:msv_loadingView="@layout/loading_view"
+                android:layout_above="@+id/tv_complete">
+
+            <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+                    android:id="@+id/swipe_to_load"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <include
+                        android:id="@id/swipe_refresh_header"
+                        layout="@layout/layout_twitter_header"/>
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@id/swipe_target"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none"
+                        android:scrollbarStyle="insideInset"
+                        android:overScrollMode="never"/>
+
+                <include
+                        android:id="@id/swipe_load_more_footer"
+                        layout="@layout/layout_classic_footer"/>
+
+
+            </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+        </com.view.MultiStateView>
+
+
+        <TextView
+                android:id="@+id/tv_complete"
+                android:text="完成"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_14"
+                android:background="@color/background_yellow"/>
+    </RelativeLayout>
+
+</LinearLayout>

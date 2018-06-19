@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.fiance.RefundsRecordActivity" android:orientation="vertical">
+
+    <include layout="@layout/toolbar_head"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center"
+            android:background="@drawable/solid_shape_white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_10"
+            android:layout_margin="@dimen/margin_10">
+        <TextView
+                android:text="学员"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+        <TextView
+                android:id="@+id/tv_membersName"
+                android:text="苏大牙"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:typeface="sans"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center"
+            android:background="@drawable/solid_shape_white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_10"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10">
+        <TextView
+                android:text="合约"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+        <TextView
+                android:text="通用课时108套餐"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:gravity="center_vertical"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center"
+            android:background="@drawable/solid_shape_white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_10"
+            android:layout_margin="@dimen/margin_10">
+        <TextView
+                android:text="退款金额"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+        <TextView
+                android:text="5000.00元"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:gravity="center_vertical"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_120"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:layout_margin="@dimen/margin_10"
+                android:layout_above="@+id/tv_complete"
+                android:layout_alignParentTop="true">
+
+            <LinearLayout
+                    android:id="@+id/ll_refundRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_45"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/paddingLeft_10"
+                    android:background="@drawable/solid_shape_white_top_left_right">
+
+                <TextView
+                        android:text="责任承担"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/layout_height_45"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/text_color_333333"
+                        android:textSize="@dimen/text_size_13"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:typeface="normal"/>
+
+                <ImageView
+                        android:id="@+id/img_addClassTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/add_responsibility"
+                        android:padding="12dp"
+                        android:scaleType="fitCenter"/>
+            </LinearLayout>
+
+            <include layout="@layout/view_line_onedp"/>
+
+            <ListView
+                    android:id="@+id/lv_responsibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none"
+                    android:cacheColorHint="@color/background_00000000"
+                    android:divider="@color/background_00000000"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tv_complete"
+                android:text="完成"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:background="@color/background_yellow"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':app', ':baselibrary', ':dialog', ':wheelviewaddress','operationmanagement','marketingmanagement','businesschool','mpchartlib','topightLeftmenu','wheelviewtime','calendarview','picture_library','ucrop'

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.daily.SelectAddressActivity" android:orientation="vertical">
+
+    <include layout="@layout/toolbar_head_text_right"/>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center_vertical"
+            android:background="@drawable/solid_shape_white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_11"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginTop="@dimen/marginTop_10">
+        <TextView
+                android:text="省市区"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+        <TextView
+                android:id="@+id/tv_selectProvice"
+                android:text="请选择"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_13"
+                android:layout_weight="1"
+
+                android:gravity="right|center_vertical"
+                android:textColor="@color/text_color_333333"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center_vertical"
+            android:background="@drawable/solid_shape_white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_11"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:visibility="gone">
+        <TextView
+                android:text="市"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+        <TextView
+                android:id="@+id/tv_selectMayer"
+                android:text="请选择"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_13"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/textcolor_999999"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center_vertical"
+            android:background="@drawable/solid_shape_white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_11"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginTop="@dimen/marginTop_10"
+            android:visibility="gone">
+        <TextView
+                android:text="区"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+        <TextView
+                android:id="@+id/tv_selectArea"
+                android:text="请选择"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_13"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/textcolor_999999"
+                android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center_vertical"
+            android:background="@drawable/solid_shape_white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_11"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginTop="@dimen/marginTop_10">
+        <TextView
+                android:text="具体地址"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+        <EditText
+                android:id="@+id/et_inputAddress"
+                android:hint="请输入"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_13"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColorHint="@color/textcolor_999999"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/text_color_333333"/>
+    </LinearLayout>
+
+
+</LinearLayout>

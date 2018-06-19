@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.daily.HomeworkDetailsActivity" android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/ll_classroomAssignments"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_13">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_head"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@mipmap/default_head"
+                app:civ_border_color="#FF000000"/>
+        <TextView
+                android:id="@+id/tv_perName"
+                android:text="苏达雅"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_13"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/marginLeft_15"/>
+
+        <TextView
+                android:id="@+id/tv_homeworkTime"
+                android:text="2018-5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_12"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/marginLeft_15"/>
+
+
+        <TextView
+                android:id="@+id/tv_homeworkState"
+                android:text="状态"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/textcolor_green"
+                android:textSize="@dimen/text_size_12"
+                android:gravity="center_vertical"/>
+    </LinearLayout>
+    <include layout="@layout/view_line_onedp"/>
+</LinearLayout>

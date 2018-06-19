@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#020D13"
+              tools:context=".ui.fragment.AnalysisFragment">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/sys_head"
+                    android:paddingTop="@dimen/paddingTop_10"
+                    android:orientation="vertical">
+
+
+                <TextView
+                        android:id="@+id/analysisTime"
+                        android:text="2017-2018年度"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center|top"
+                        android:textSize="@dimen/text_size_14"/>
+            </FrameLayout>
+
+            <TextView
+                    android:text="-  经营分析"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_16"
+                    android:drawablePadding="@dimen/drawablePadding_6"
+                    android:textColor="@color/textcolor_20e8d1"
+                    android:layout_marginLeft="@dimen/marginLeft_10"
+                    android:layout_marginRight="@dimen/marginRight_10"
+                    android:layout_marginTop="@dimen/marginTop_30"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textcolor_20e8d1"
+                    android:layout_marginLeft="@dimen/marginLeft_10"
+                    android:layout_marginRight="@dimen/marginRight_10"
+                    android:layout_marginTop="@dimen/marginTop_15"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="180dp"
+                          android:orientation="horizontal"
+                          android:gravity="center_vertical">
+
+                <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/piechart_operationAnalysis"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"/>
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                    <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_44"
+                            android:orientation="horizontal">
+
+                        <View
+                                android:id="@+id/view_bgHasExpense"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="#0081BD"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+                        <TextView
+                                android:id="@+id/tv_hasExpense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="top"
+                                android:textSize="@dimen/text_size_10"
+                                android:textColor="@color/textcolor_20e8d1"
+                                android:text=""
+                                android:layout_marginLeft="30dp"/>
+
+                        <TextView
+                                android:id="@+id/tv_hasExpensePrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="top"
+                                android:textSize="@dimen/text_size_10"
+                                android:textColor="@color/textcolor_20e8d1"
+                                android:text=""
+                                android:layout_marginLeft="@dimen/marginLeft_10"
+                                android:layout_marginTop="@dimen/marginTop_20"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_44"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/marginTop_10">
+
+                        <View
+                                android:id="@+id/view_bgNoexpense"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp"
+                                android:background="#0081BD"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+                        <TextView
+                                android:id="@+id/tv_noExpense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="top"
+                                android:textSize="@dimen/text_size_10"
+                                android:textColor="@color/textcolor_20e8d1"
+                                android:text=""
+                                android:layout_marginLeft="30dp"/>
+
+                        <TextView
+                                android:id="@+id/tv_noExpensePrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="top"
+                                android:textSize="@dimen/text_size_10"
+                                android:textColor="@color/textcolor_20e8d1"
+                                android:text=""
+                                android:layout_marginLeft="@dimen/marginLeft_10"
+                                android:layout_marginTop="@dimen/marginTop_20"/>
+
+                    </FrameLayout>
+
+
+                    <TextView
+                            android:id="@+id/tv_totalClassCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_11"
+                            android:textColor="@color/textcolor_329fc8"
+                            android:text=""
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_marginLeft="@dimen/marginLeft_10"
+                            android:gravity="top|left"
+                            android:layout_marginTop="@dimen/marginTop_10"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                    android:id="@+id/tv_pre_profit"
+                    android:text="预估年盈利25万元"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_35"
+                    android:textSize="@dimen/text_size_14"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+            <TextView
+                    android:id="@+id/tv_members"
+                    android:text="可容纳学员：600人    现有学员：350人"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_35"
+                    android:textSize="@dimen/text_size_12"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textcolor_blue"
+                    android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@mipmap/sys_line"
+                      android:layout_marginTop="@dimen/marginTop_15"/>
+
+            <!-- -  学员分析-->
+            <include layout="@layout/student_analysis_view"/>
+
+
+            <!-- -  延展分析-->
+            <include layout="@layout/fragment_extention_analysis_linechart_type"/>
+
+            <!-- 财务分析-->
+            <include layout="@layout/fragment_analysis_chart_type"/>
+            <!-- -  营销费用-->
+            <include layout="@layout/fragment_marketing_analysis"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

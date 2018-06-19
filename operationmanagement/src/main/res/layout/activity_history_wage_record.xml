@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.fiance.HistoryWageRecordActivity"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10"
+        android:layout_marginBottom="@dimen/marginBottom_10">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:background="@drawable/solid_shape_white">
+
+        <TextView
+                android:text="2018年05月工资"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_performance"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/marginBottom_8"
+                android:textColor="@color/textcolor_666666"
+                android:textSize="@dimen/text_size_12"/>
+        <TextView
+                android:text="2018-04-20 01:28:13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/marginTop_8"
+                android:textColor="@color/textcolor_a9a9a9"
+                android:textSize="@dimen/text_size_10"/>
+        <TextView
+                android:text="-15.93元"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15"
+                android:layout_gravity="center_vertical|right"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:drawableRight="@mipmap/arrow_right"
+                android:drawablePadding="@dimen/drawablePadding_8"
+                android:layout_marginRight="@dimen/marginRight_12"/>
+    </FrameLayout>
+</LinearLayout>

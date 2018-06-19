@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.edu.AddOneToOneStudentsActivity" android:orientation="vertical">
+
+    <include layout="@layout/toolbar_head_text_right_two_img"
+             android:id="@+id/toolbar"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/tv_complete">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/solid_shape_recharge_white"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:layout_margin="@dimen/margin_10">
+
+
+                <TextView
+                        android:text="基本信息"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_45"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/paddingLeft_10"
+                        android:paddingRight="@dimen/paddingRight_10"
+                        android:textColor="@color/text_color_333333"
+                        android:textSize="@dimen/text_size_13"/>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="@dimen/layout_height_50"
+                              android:orientation="horizontal"
+                              android:gravity="center_vertical"
+                              android:paddingLeft="@dimen/paddingLeft_10"
+                              android:paddingRight="@dimen/paddingRight_10">>
+                    <TextView
+                            android:text="学员"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_333333"
+                            android:textSize="@dimen/text_size_13"/>
+                    <TextView
+                            android:text="请选择"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_13"/>
+                </LinearLayout>
+
+
+                <include layout="@layout/view_line_onedp"/>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="@dimen/layout_height_50"
+                              android:orientation="horizontal"
+                              android:gravity="center_vertical"
+                              android:paddingLeft="@dimen/paddingLeft_10"
+                              android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="开始时间"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_333333"
+                            android:textSize="@dimen/text_size_13"/>
+                    <TextView
+                            android:id="@+id/tv_startTime"
+                            android:text="请选择"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_13"/>
+                </LinearLayout>
+
+
+                <include layout="@layout/view_line_onedp"/>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="@dimen/layout_height_50"
+                              android:orientation="horizontal"
+                              android:gravity="center_vertical"
+                              android:paddingLeft="@dimen/paddingLeft_10"
+                              android:paddingRight="@dimen/paddingRight_10">
+                    <TextView
+                            android:text="结束时间"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_333333"
+                            android:textSize="@dimen/text_size_13"/>
+                    <TextView
+                            android:id="@+id/tv_endTime"
+                            android:text="请选择"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="@dimen/text_size_13"/>
+                </LinearLayout>
+
+
+                <include layout="@layout/view_line_onedp"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginRight="@dimen/marginLeft_10"
+                          android:layout_marginLeft="@dimen/marginLeft_10"
+                          android:background="@drawable/solid_shape_white">
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_50"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingLeft_10">
+                    <TextView
+                            android:text="上课时间"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/text_size_13"
+                            android:textColor="@color/text_color_333333"/>
+                    <ImageView
+                            android:id="@+id/img_addClassTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/add_timesetting"
+                            android:padding="@dimen/padding_10"/>
+                </LinearLayout>
+
+                <include layout="@layout/view_line_onedp"/>
+
+                <com.example.administrator.oper.ui.widget.MyListView
+                        android:id="@+id/lv_showoneToOneStudent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:dividerHeight="0dp"
+                        android:scrollbars="none"
+                        android:cacheColorHint="@color/background_00000000"
+                        android:divider="@color/background_00000000"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+            android:id="@+id/tv_complete"
+            android:text="完成"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_48"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/text_size_15"
+            android:background="@color/background_yellow"/>
+</RelativeLayout>

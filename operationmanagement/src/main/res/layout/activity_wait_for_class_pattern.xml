@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginRight="@dimen/marginRight_10"
+              android:layout_marginLeft="@dimen/marginLeft_10"
+              tools:context=".ui.activity.daily.WaitForClassActivity">
+    <FrameLayout
+            android:id="@+id/fl_waitForClassBg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_60"
+            android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/marginLeft_10"/>
+        <TextView
+                android:id="@+id/tv_waitName"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/text_color_333333"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="@dimen/marginBottom_15"
+                android:textSize="@dimen/text_size_13"/>
+        <TextView
+                android:id="@+id/tv_waitPhone"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/textcolor_AEAEAE"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:textSize="@dimen/text_size_11"/>
+
+
+        <TextView
+                android:id="@+id/tv_waitState"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="@color/textcolor_green"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="@dimen/marginBottom_15"
+                android:layout_marginRight="@dimen/marginRight_13"
+                android:textSize="@dimen/text_size_11"/>
+        <TextView
+                android:id="@+id/tv_parentName"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="@color/text_color_333333"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:layout_marginRight="@dimen/marginRight_13"
+                android:textSize="@dimen/text_size_11"/>
+    </FrameLayout>
+    <include layout="@layout/view_line_onedp"/>
+</LinearLayout>

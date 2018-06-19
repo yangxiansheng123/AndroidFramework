@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#020D13"
+              tools:context=".ui.fragment.AnalysisFragment">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:layout_height="@dimen/layout_height_50"
+            android:layout_marginTop="@dimen/marginTop_10">
+        <TextView
+                android:text="-  营销费用"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/textcolor_20e8d1"/>
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textcolor_20e8d1"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginTop="@dimen/marginTop_5"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="@dimen/marginTop_30">
+
+        <ImageView
+                android:src="@mipmap/triangle_two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView3"
+                android:layout_gravity="left"/>
+
+
+        <TextView
+                android:text="签约300人600元/人%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center|right"
+                android:layout_marginTop="@dimen/marginTop_35"
+                android:layout_marginRight="@dimen/marginRight_15"/>
+
+
+        <TextView
+                android:text="试听/试读400人400元/人%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center|right"
+                android:layout_marginBottom="@dimen/marginBottom_8"
+                android:layout_marginRight="@dimen/marginRight_15"/>
+
+        <TextView
+                android:text="获取信息600人300元/人%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textcolor_blue"
+                android:textSize="@dimen/text_size_11"
+                android:layout_gravity="center|right"
+                android:layout_marginBottom="45dp"
+                android:layout_marginRight="@dimen/marginRight_15"/>
+    </FrameLayout>
+
+    <TextView
+            android:id="@+id/tv_pre_profit"
+            android:text="年投入：15万元"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_35"
+            android:textSize="@dimen/text_size_14"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/marginTop_20"
+            android:layout_marginLeft="@dimen/marginLeft_10"/>
+    <TextView
+            android:text="· 邀约率偏高/低，学员精准度不错/需要提升
+· 到访试听率偏高/低，校区环境和老师的销售能力不错/
+   需要提升
+· 试听签约率偏高/低，试听课和销售能力不错/需要提升"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_13"
+            android:textColor="@color/textcolor_blue"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginTop="@dimen/marginTop_15"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_150"
+            android:src="@mipmap/my_serive"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/marginTop_30"/>
+
+    <TextView
+            android:text="只为机构提供最专业的落地可执行方案"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/textcolor_blue"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginTop_10"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_30"
+            android:layout_marginBottom="50dp">
+        <ImageView
+                android:src="@mipmap/fullcustomization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView9"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/marginLeft_20"/>
+        <ImageView
+                android:id="@+id/imageView10"
+                android:src="@mipmap/semicustomizing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/marginRight_20"
+                android:layout_marginLeft="@dimen/marginLeft_15"/>
+    </LinearLayout>
+
+
+</LinearLayout>

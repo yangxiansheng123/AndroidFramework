@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ShapedImageView">
+        <attr name="shape_mode" format="enum">
+            <enum name="round_rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+        <attr name="round_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+
+    <!--TabIndicator的参数设置-->
+    <declare-styleable name="PagerSlidingTab">
+        <attr name="indicatorColor" format="color" />
+        <attr name="underlineColor" format="color" />
+        <attr name="dividerColor" format="color" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="pst_dividerPadding" format="dimension" />
+        <attr name="tabPaddingLeftRight" format="dimension" />
+        <attr name="scrollOffset" format="dimension" />
+        <attr name="tabBackgrounds" format="reference" />
+        <attr name="sameLine" format="boolean" />
+        <attr name="pst_textAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <!--首页消息垂直滚动-->
+    <declare-styleable name="VerticalBannerView">
+        <attr name="gap" format="integer" />
+        <attr name="animDuration" format="integer"/>
+    </declare-styleable>
+    <!--倒计时-->
+    <declare-styleable name="CountdownView">
+        <attr name="isHideTimeBackground" format="boolean" />
+        <attr name="isShowTimeBgDivisionLine" format="boolean" />
+        <attr name="timeBgDivisionLineColor" format="color" />
+        <attr name="timeBgDivisionLineSize" format="dimension" />
+        <attr name="timeBgColor" format="color" />
+        <attr name="timeBgSize" format="dimension" />
+        <attr name="timeBgRadius" format="dimension" />
+
+        <attr name="isTimeTextBold" format="boolean" />
+        <attr name="timeTextSize" format="dimension" />
+        <attr name="timeTextColor" format="color" />
+        <attr name="isShowDay" format="boolean" />
+        <attr name="isShowHour" format="boolean" />
+        <attr name="isShowMinute" format="boolean" />
+        <attr name="isShowSecond" format="boolean" />
+        <attr name="isShowMillisecond" format="boolean" />
+        <attr name="isConvertDaysToHours" format="boolean" />
+
+        <attr name="isSuffixTextBold" format="boolean" />
+        <attr name="suffixTextSize" format="dimension" />
+        <attr name="suffixTextColor" format="color" />
+        <attr name="suffix" format="string" />
+        <attr name="suffixDay" format="string" />
+        <attr name="suffixHour" format="string" />
+        <attr name="suffixMinute" format="string" />
+        <attr name="suffixSecond" format="string" />
+        <attr name="suffixMillisecond" format="string" />
+        <attr name="suffixGravity">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+        <attr name="suffixLRMargin" format="dimension" />
+        <attr name="suffixDayLeftMargin" format="dimension" />
+        <attr name="suffixDayRightMargin" format="dimension" />
+        <attr name="suffixHourLeftMargin" format="dimension" />
+        <attr name="suffixHourRightMargin" format="dimension" />
+        <attr name="suffixMinuteLeftMargin" format="dimension" />
+        <attr name="suffixMinuteRightMargin" format="dimension" />
+        <attr name="suffixSecondLeftMargin" format="dimension" />
+        <attr name="suffixSecondRightMargin" format="dimension" />
+        <attr name="suffixMillisecondLeftMargin" format="dimension" />
+
+        <attr name="isShowTimeBgBorder" format="boolean" />
+        <attr name="timeBgBorderColor" format="color" />
+        <attr name="timeBgBorderSize" format="dimension" />
+        <attr name="timeBgBorderRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="LabelView">
+        <!-- 设置文字内容 -->
+        <attr name="lv_text" format="string"/>
+        <!-- 设置文字颜色,默认#ffffff -->
+        <attr name="lv_text_color" format="color"/>
+        <!-- 设置文字大小,默认11sp -->
+        <attr name="lv_text_size" format="dimension"/>
+        <!-- 设置文字是否支持加粗,默认true -->
+        <attr name="lv_text_bold" format="boolean"/>
+        <!-- 设置文字是否支持全部大写,默认true-->
+        <attr name="lv_text_all_caps" format="boolean"/>
+        <!-- 设置背景颜色,默认"#FF4081"-->
+        <attr name="lv_background_color" format="color"/>
+        <!-- 设置LabelView所在矩形最小宽高,默认mFillTriangle?35dp:50dp-->
+        <attr name="lv_min_size" format="dimension"/>
+        <!-- 设置文字上下padding,默认3.5dp,mFillTriangle为true时无效-->
+        <attr name="lv_padding" format="dimension"/>
+        <!-- 设置LabelView方向 -->
+        <attr name="lv_gravity" format="enum">
+            <enum name="TOP_LEFT" value="51"/>
+            <enum name="TOP_RIGHT" value="53"/>
+            <enum name="BOTTOM_LEFT" value="83"/>
+            <enum name="BOTTOM_RIGHT" value="85"/>
+        </attr>
+        <!-- 设置是否填充三角区域,默认false -->
+        <attr name="lv_fill_triangle" format="boolean"/>
+
+    </declare-styleable>
+</resources>

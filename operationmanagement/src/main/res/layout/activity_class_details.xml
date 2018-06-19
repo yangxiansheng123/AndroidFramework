@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.edu.ClassDetailsActivity"
+        android:background="@color/background_f4f4f4">
+
+    <include layout="@layout/toolbar_head_text_right_two_img"
+             android:id="@+id/toolbar"/>
+
+    <com.example.administrator.oper.ui.widget.view.NRStickyLayout
+            android:id="@+id/sticky_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="@dimen/marginTop_50"
+            android:layout_marginBottom="55dp">
+
+        <RelativeLayout
+                android:id="@+id/id_nr_stickylayout_top_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                    android:id="@+id/cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/marginRight_10"
+                    android:layout_marginLeft="@dimen/marginLeft_10"
+                    android:layout_marginTop="@dimen/marginTop_10"
+                    android:background="@drawable/solid_shape_white">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_44"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                    <TextView
+                            android:id="@+id/tv_classTimetable"
+                            android:text=""
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_333333"
+                            android:textSize="@dimen/text_size_13"
+                            android:layout_marginLeft="@dimen/marginLeft_10"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:layout_weight="1"
+                            android:ellipsize="end"/>
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/edit"
+                            android:id="@+id/imageView7"
+                            android:layout_marginRight="@dimen/marginRight_12"
+                            android:layout_gravity="right|center_vertical"/>
+
+                </LinearLayout>
+
+                <TextView
+                        android:id="@+id/tv_classType"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_35"
+                        android:textColor="@color/text_color_333333"
+                        android:textSize="@dimen/text_size_13"
+                        android:layout_marginLeft="@dimen/marginLeft_10"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"/>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_35"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                    <TextView
+                            android:id="@+id/tv_classCourse"
+                            android:text=""
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_333333"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+                    <TextView
+                            android:id="@+id/tv_classTeacher"
+                            android:text=""
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_333333"
+                            android:textSize="@dimen/text_size_13"
+                            android:layout_weight="0.5"
+                            android:layout_marginRight="@dimen/marginRight_12"/>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_35"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                    <TextView
+                            android:id="@+id/tv_classCategory"
+                            android:text=""
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_a5a5a5"
+                            android:textSize="@dimen/text_size_12"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+                    <TextView
+                            android:id="@+id/tv_classStudents"
+                            android:text=""
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_color_333333"
+                            android:textSize="@dimen/text_size_13"
+                            android:layout_weight="0.5"
+                            android:layout_marginRight="@dimen/marginRight_12"/>
+
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/background_f4f4f4"/>
+
+                <LinearLayout
+                        android:id="@+id/ll_seeCourseArrangement"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/layout_height_48"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                    <TextView
+                            android:text="查看课程安排"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textcolor_blue"
+                            android:textSize="@dimen/text_size_13"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/arrow_right"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginRight="@dimen/marginRight_12"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/id_nr_stickylayout_sticky_view"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginTop="@dimen/marginTop_10">
+
+            <com.example.administrator.oper.ui.widget.TabPageIndicator
+                    android:id="@+id/indicator_bookkeeping"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/head_img"
+                    android:background="@drawable/solid_shape_white_top_left_right"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/indicator_bookkeeping"
+                    android:background="@color/background_f4f4f4"/>
+        </RelativeLayout>
+        <android.support.v4.view.ViewPager
+                android:id="@+id/vp_bookkeeping"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                android:scrollIndicators="none"
+                android:background="@color/white"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:layout_marginLeft="@dimen/marginLeft_10"/>
+
+    </com.example.administrator.oper.ui.widget.view.NRStickyLayout>
+    <LinearLayout
+            android:id="@+id/ll_addOneToOneStu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center"
+            android:background="@color/background_yellow"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom">
+        <TextView
+                android:text="添加1对1学员"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/text_color_333333"
+                android:drawableLeft="@mipmap/add"
+                android:drawablePadding="@dimen/drawablePadding_6"/>
+    </LinearLayout>
+</FrameLayout>

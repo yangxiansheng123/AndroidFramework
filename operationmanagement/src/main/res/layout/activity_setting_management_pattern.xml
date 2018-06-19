@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.activity.me.SettingManagementActivity"
+        android:layout_marginTop="@dimen/marginTop_10"
+        android:layout_marginLeft="@dimen/marginLeft_10"
+        android:layout_marginRight="@dimen/marginRight_10">
+
+    <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_55"
+            android:gravity="center"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_10">
+        <TextView
+                android:id="@+id/tv_shopowner"
+                android:text="店长"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/marginBottom_12"/>
+
+        <TextView
+                android:id="@+id/tv_jurisdiction"
+                android:text="具有系统操作的所有权限"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_11"
+                android:textColor="@color/text_color_a5a5a5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/marginTop_12"/>
+        <CheckBox
+                style="@style/CustomCheckBoxTheme"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical|right"/>
+
+
+        <ImageView
+                android:id="@+id/img_isChecked"
+                android:src="@mipmap/un_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical|right"/>
+    </FrameLayout>
+    <include layout="@layout/view_line_onedp"/>
+</LinearLayout>

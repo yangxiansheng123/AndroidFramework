@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">ModelTest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="analysis">分析</string>
+    <string name="education_admin">教务</string>
+    <string name="daily">日常</string>
+    <string name="finance">财务</string>
+    <string name="me">我的</string>
+    <string name="title_activity_modify_pasword">修改密码</string>
+    <string name="title_activity_student_management">学员管理</string>
+    <string name="title_activity_timetables">总课表</string>
+    <string name="title_activity_employee_list">员工列表</string>
+    <string name="title_activity_contract_management">合同管理</string>
+    <string name="title_activity_classroom_management">教室管理</string>
+    <string name="title_activity_student_refunds">学员退款</string>
+    <string name="title_activity_bookkeeping">我要记账</string>
+    <string name="complte">完成</string>
+    <string name="title_activity_payrolls">工资表</string>
+    <string name="title_activity_personal_payroll">个人工资表</string>
+    <string name="title_activity_all_expenses">各种费用</string>
+    <string name="title_activity_college_entry">添加学员</string>
+    <string name="title_activity_college_distribution">分配家长</string>
+    <string name="title_activity_college_follow_up">学员跟进</string>
+    <string name="title_activity_renewal_reminding">续费提醒</string>
+    <string name="title_activity_auditions_arrangement">试听安排</string>
+    <string name="title_activity_wait_for_class">待排课</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_student_attendance">学员考勤</string>
+    <string name="title_activity_create_ajob">创建作业</string>
+    <string name="title_activity_to_be_corrected">待批改</string>
+    <string name="title_activity_my_homework">作业列表</string>
+    <string name="title_activity_select_student_distribution">家长分配</string>
+    <string name="title_activity_distribution_parents">分配家长</string>
+    <string name="title_activity_reminder_settings">提醒设置</string>
+    <string name="title_activity_select_students">选择学员</string>
+    <string name="title_activity_curriculum_classification">课程分类</string>
+    <string name="title_activity_select_class">选择班级</string>
+    <string name="title_activity_add_meal">添加套餐</string>
+    <string name="title_activity_add_cass">添加班级</string>
+    <string name="title_activity_add_one_to_one_classes">添加1对1班级</string>
+    <string name="title_activity_one_to_one_details">班级1对1详情</string>
+    <string name="title_activity_add_one_to_one_students">添加1对1学员</string>
+    <string name="title_activity_details_of_parents">家长详情</string>
+    <string name="title_activity_homework_details">作业详情</string>
+    <string name="title_activity_add_staff">添加员工</string>
+    <string name="title_activity_classroom_assignments">课堂作业</string>
+
+
+    <string name="test">本实验将两种不同的数学阅读策略及教学策略贯穿于整个教学中，具体体现在课前预习、课堂教学及课外作业中。</string>
+    <string name="title_activity_add_roles">添加角色</string>
+    <string name="title_activity_persona_refund">个人退款详情</string>
+    <string name="title_activity_add_students_select_type">添加学员不同类型选择</string>
+    <string name="title_activity_intentional_course">选择意向课程</string>
+    <string name="title_activity_adding_classrooms">添加教室</string>
+    <string name="title_activity_add_classrooms_selects">添加班级选择不同类型</string>
+    <string name="title_activity_class_time_setting">上课时间设置</string>
+    <string name="title_activity_add_employee_wages">添加员工工资</string>
+    <string name="title_activity_change_record">变更记录</string>
+    <string name="test_1236">
+        艺魔方，中国最专业的艺术教育线上交互平台致力于打破艺术教育领域教育资源不对称、教学质量无保证、收费标准不透明等现状，为您提供最优的艺术教育体验。多位艺术领域顶尖人才，携手全国多所著名艺术院校、权威机构，精心打造；艺术领域的o2o模式创新，架起有艺术教育需求者与专业老师、机构的沟通桥梁；提供老师学生自主约课渠道，满足一对一、一对多等多种授课选择；教育资源精准对接，海量大咖课程分享，艺术资讯实时展示，共享艺术之美。
+    </string>
+
+
+    <array name="bookkeeping">
+        <item>支出</item>
+        <item>收入</item>
+    </array>
+    <array name="classdetails">
+        <item>在读学员</item>
+        <item>试听学员</item>
+    </array>
+    <string name="title_activity_class_details">班级详情</string>
+    <string name="title_activity_course_arrangement_list">课日程列表</string>
+    <string name="title_activity_cotract_package_select_category">合同套餐选择分类</string>
+    <string name="title_activity_follow_up_record">跟进记录</string>
+    <string name="title_activity_add_arecord">添加记录</string>
+    <string name="title_activity_contract_purchase_course">签约购课</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="Confirm_to_delete_data">是否确认删除此数据?</string>
+    <string name="title_activity_select_courseclassification">选择分类</string>
+    <string name="title_activity_class_time_list">上课时间列表</string>
+    <string name="title_activity_choice_follow_up_method">选择跟进方式</string>
+    <string name="default_file_name">myRecording</string>
+    <string name="toast_recording_start">Recording started</string>
+    <string name="toast_recording_finish">Recording saved to</string>
+    <string name="toast_file_delete">%1$s successfully deleted</string>
+    <string name="notification_recording">Recording...</string>
+    <!-- Dialogs -->
+    <string name="dialog_title_delete">Confirm Delete...</string>
+    <string name="dialog_text_delete">Are you sure you would like to delete this file?</string>
+    <string name="dialog_title_licenses">Open Source Licenses</string>
+    <string name="dialog_title_share">Share File</string>
+    <string name="dialog_title_rename">Rename File</string>
+    <string name="dialog_title_options">Options</string>
+    <string name="dialog_action_ok">OK</string>
+    <string name="dialog_action_yes">Yes</string>
+
+    <string name="dialog_file_share">分享音频</string>
+    <string name="dialog_file_rename">重名文件夹名</string>
+    <string name="dialog_file_delete">删除音频</string>
+    <string name="dialog_action_cancel">Cancel</string>
+    <string name="send_to">Send to</string>
+    <string name="dialog_action_no">No</string>
+    <string name="title_activity_course_check_in">课程签到</string>
+    <string name="title_activity_record_of_expenditure">支出记录</string>
+    <string name="title_activity_refunds_record">退款记录</string>
+    <string name="title_activity_course_purchase_record">购课记录</string>
+    <string name="title_activity_commit_preview_homeworkctivity">提交预览</string>
+    <string name="network_erro">· 查看您的手机网络，并在网络好的时候提交作业\n · 拍照作业时分辨率调低，降低照片文件大小 \n· 查看您的手机网络，并在网络好的时候提交作业 \n·
+        拍照作业时分辨率调低，降低照片文件大小
+    </string>
+    <string name="title_activity_select_address">选择地址</string>
+</resources>

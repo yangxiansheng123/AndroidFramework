@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.fiance.AddEmployeeWagesActivity"
+        android:orientation="vertical"
+        android:background="@color/background_f4f4f4">
+    <include layout="@layout/toolbar_head_text_right"/>
+
+    <LinearLayout
+            android:id="@+id/ll_studetSource"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center"
+            android:background="@drawable/solid_shape_white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_10"
+            android:layout_margin="@dimen/margin_10">
+        <TextView
+                android:text="· 员工名称"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+        <TextView
+                android:id="@+id/tv_employeeName"
+                android:text="请选择"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_a5a5a5"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_50"
+            android:gravity="center"
+            android:background="@drawable/solid_shape_white"
+            android:paddingLeft="@dimen/paddingLeft_10"
+            android:paddingRight="@dimen/paddingRight_10"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginLeft="@dimen/marginLeft_10">
+        <TextView
+                android:text="· 固定工资"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+
+        <EditText
+                android:id="@+id/tv_fixedSalary"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="请输入"
+                android:layout_weight="1"
+                android:textColorHint="@color/text_color_a5a5a5"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"
+                android:background="@color/white"
+                android:gravity="right|center_vertical"
+                android:paddingRight="@dimen/paddingRight_10"/>
+        <TextView
+                android:text="元"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_13"
+                android:textColor="@color/text_color_333333"/>
+    </LinearLayout>
+</LinearLayout>

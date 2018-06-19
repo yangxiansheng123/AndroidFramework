@@ -1,0 +1,82 @@
+//根据isModule标签动态的切换 集成/组件模式
+if (isModule) {
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
+}
+
+def cfg = rootProject.ext.andcode
+def appId = rootProject.ext.appId
+android {
+    compileSdkVersion cfg.compileSdkVersion
+    buildToolsVersion cfg.buildToolsVersion
+    defaultConfig {
+
+        //组件模式下
+        if (!isModule) {
+            applicationId appId['operationmanagement']
+        }
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
+        versionCode cfg.versionCode
+        versionName cfg.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //资源配置
+    sourceSets {
+        main {
+            //在组件模式下 使用不同的manifest文件
+//            if (!isModule) {
+//                manifest.srcFile 'src/main/AndroidManifest.xml'
+//                java.srcDirs 'src/main/java'
+//            } else {
+//                manifest.srcFile 'src/main/AndroidManifest.xml'
+//            }
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //    implementation 'com.android.support:appcompat-v7:24.0.0'
+    //    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    //    implementation 'com.android.support:support-v4:25.4.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    //    implementation 'com.android.support:support-v4:25.4.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation project(':baselibrary')
+    implementation project(':dialog')
+    implementation project(':mpchartlib')
+    implementation project(':topightLeftmenu')
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    //switch button
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+    //圆形进度条
+    implementation project(':wheelviewtime')
+    implementation project(':calendarview')
+    implementation project(':picture_library')
+    implementation project(':wheelviewaddress')
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+}

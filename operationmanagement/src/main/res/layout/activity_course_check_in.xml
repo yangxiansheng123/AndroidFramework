@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_f4f4f4"
+        tools:context=".ui.activity.daily.CourseCheckInActivity" android:orientation="vertical">
+
+    <include layout="@layout/toolbar_head_text_right"/>
+
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/cardviewAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/marginRight_10"
+            android:layout_marginLeft="@dimen/marginLeft_10"
+            android:layout_marginTop="@dimen/marginTop_10"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="1dp"
+            android:layout_marginBottom="@dimen/marginBottom_10">
+        <TextView
+                android:id="@+id/tv_checkInTitle"
+                android:text="初级钢琴体验课程"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_13"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginRight_12"
+                android:layout_marginTop="@dimen/marginTop_10"
+                android:layout_gravity="right"
+                android:textColor="@color/textcolor_red"
+                android:textSize="@dimen/text_size_12"
+                android:text="考勤中"
+                android:drawableRight="@mipmap/right_red"
+                android:drawablePadding="@dimen/drawablePadding_8"/>
+
+
+        <TextView
+                android:id="@+id/tv_checkInNumbs"
+                android:text="学员人数 10人"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_13"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginTop="@dimen/marginTop_40"/>
+        <TextView
+                android:id="@+id/tv_checkInTime"
+                android:text="时间 2018-3-30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color_333333"
+                android:textSize="@dimen/text_size_13"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/marginRight_12"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginTop="@dimen/marginTop_40"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_50"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/marginRight_12"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginTop="@dimen/marginTop_70"
+                android:gravity="center_vertical">
+
+            <TextView
+                    android:id="@+id/tv_checkInAbsent"
+                    android:text="缺席：7人"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:id="@+id/tv_checkInSigned"
+                    android:text="已签到：20人"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+
+            <TextView
+                    android:id="@+id/tv_checkInLeave"
+                    android:text="请假：1人"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="@dimen/text_size_13"
+                    android:gravity="right"
+                    android:layout_weight="1"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/background_f4f4f4"
+              android:layout_marginTop="75dp"/>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cardview"
+            android:layout_above="@+id/ll_addOneToOneStu">
+
+        <com.example.administrator.oper.ui.widget.TabPageIndicator
+                android:id="@+id/indicator_courseCheckIn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/head_img"
+                android:layout_marginLeft="@dimen/marginLeft_10"
+                android:layout_marginRight="@dimen/marginRight_10"
+                android:background="@drawable/solid_shape_white_top_left_right"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_f4f4f4"/>
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/vp_courseCheckIn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>

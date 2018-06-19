@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".ui.activity.edu.EmployeeListActivity">
+
+    <include layout="@layout/toolbar_head_text_right_img"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/marginTop_35"
+            android:background="@drawable/solid_shape_gray_f4"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/marginLeft_15"
+            android:layout_marginRight="@dimen/marginRight_15"
+            android:layout_marginBottom="@dimen/marginBottom_10"
+            android:gravity="center">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/seach"
+                android:id="@+id/imageView"
+                android:layout_marginRight="@dimen/marginRight_15"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="搜索员工名"
+                android:background="@null"
+                android:textSize="@dimen/text_size_13"
+                android:gravity="center"/>
+    </LinearLayout>
+
+    <com.view.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:msv_emptyView="@layout/empty_view"
+            app:msv_errorView="@layout/error_view"
+            app:msv_loadingView="@layout/loading_view">
+
+        <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+                android:id="@+id/swipe_to_load"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_f4f4f4">
+
+            <include
+                    android:id="@id/swipe_refresh_header"
+                    layout="@layout/layout_twitter_header"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@id/swipe_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/paddingBottom_20"
+                    android:paddingTop="@dimen/paddingTop_15"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    android:scrollbarFadeDuration="@android:color/transparent"/>
+
+            <include
+                    android:id="@id/swipe_load_more_footer"
+                    layout="@layout/layout_classic_footer"/>
+
+
+        </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+    </com.view.MultiStateView>
+
+</LinearLayout>
