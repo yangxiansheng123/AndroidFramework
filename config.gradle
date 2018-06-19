@@ -1,0 +1,31 @@
+ext{
+    // false: 模块化
+    // true ：集成模式
+    isModule = false
+    andcode= [
+            compileSdkVersion: 26,
+            buildToolsVersion: "27.0.2",
+            minSdkVersion    : 15,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+//配置各个模块的包名
+    appId = ["app"    : "com.androidframework",
+             "businesschool": "com.example.administrator.busin",
+             "marketingmanagement": "com.example.administrator.market",
+             "operationmanagement": "com.example.administrator.oper",
+             "soundrecording": "com.danielkim.soundrecorder"]
+
+    dependencies = [
+            "appcompat-v7"     : "com.android.support:appcompat-v7:27.1.1",
+            "support-v4"     : "com.android.support:support-v4:27.1.1",
+            "recyclerview-v7"     : "com.android.support:recyclerview-v7:27.1.1",
+    ]
+    cfgs = [
+            androidSupportVersion: "27.1.1",
+            glide                : "4.7.1",
+            rxjava               : "2.0.5",
+            rxandroid            : "2.0.1"
+    ]
+}
