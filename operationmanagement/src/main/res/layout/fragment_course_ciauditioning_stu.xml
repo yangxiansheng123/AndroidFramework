@@ -2,13 +2,40 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
-             android:layout_height="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
              tools:context=".ui.fragment.daily.CourseCIAuditioningStuFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <com.view.MultiStateView
+            android:id="@+id/multiStateView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/hello_blank_fragment"/>
+            app:msv_emptyView="@layout/empty_view"
+            app:msv_errorView="@layout/error_view"
+            app:msv_loadingView="@layout/loading_view">
+
+        <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+                android:id="@+id/swipe_to_load"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_f4f4f4">
+
+            <include
+                    android:id="@id/swipe_refresh_header"
+                    layout="@layout/layout_twitter_header"/>
+
+            <android.support.v7.widget.RecyclerView
+                    android:id="@id/swipe_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/paddingBottom_10"/>
+
+            <include
+                    android:id="@id/swipe_load_more_footer"
+                    layout="@layout/layout_classic_footer"/>
+
+
+        </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+    </com.view.MultiStateView>
 
 </FrameLayout>
