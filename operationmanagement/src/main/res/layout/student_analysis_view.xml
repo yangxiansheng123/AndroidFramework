@@ -72,7 +72,7 @@
                 android:id="@+id/imageView3"
                 android:layout_gravity="center"/>
         <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tv_analysis_increNum"
                 android:text="新增：200人"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -83,6 +83,7 @@
                 android:layout_marginLeft="@dimen/marginLeft_15"/>
 
         <TextView
+                android:id="@+id/tv_analysis_followNum"
                 android:text="跟进：180人"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -94,6 +95,7 @@
 
 
         <TextView
+                android:id="@+id/tv_analysis_visitNum"
                 android:text="到访：100人"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -105,6 +107,7 @@
 
 
         <TextView
+                android:id="@+id/tv_analysis_audioNum"
                 android:text="试听：80人"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -116,6 +119,7 @@
 
 
         <TextView
+                android:id="@+id/tv_analysis_siginNum"
                 android:text="签约：50人"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -128,6 +132,7 @@
 
 
         <TextView
+                android:id="@+id/tv_analysis_audioSiginRate"
                 android:text="试听签约率85%"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -139,7 +144,8 @@
 
 
         <TextView
-                android:text="试听签约率85%"
+                android:id="@+id/tv_analysis_visitRate"
+                android:text="到访试听率85%"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textcolor_blue"
@@ -149,7 +155,8 @@
                 android:layout_marginRight="@dimen/marginRight_15"/>
 
         <TextView
-                android:text="试听签约率85%"
+                android:id="@+id/tv_analysis_inviteRate"
+                android:text="邀约率85%"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textcolor_blue"

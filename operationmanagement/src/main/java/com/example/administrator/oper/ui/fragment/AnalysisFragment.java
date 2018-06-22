@@ -51,6 +51,23 @@ public class AnalysisFragment extends BaseFragment implements View.OnClickListen
     protected LinearLayout llSelectAddress;
     protected EditText etIsMobile;
     protected TextView tvAnalysisSelectStartTime;
+    /**
+     * 学员分析
+     */
+    protected TextView tvAnalysisIncreNum;
+    protected TextView tvAnalysisFollowNum;
+    protected TextView tvAnalysisVisitNum;
+    protected TextView tvAnalysisAudioNum;
+    protected TextView tvAnalysisSiginNum;
+    protected TextView tvAnalysisAudioSiginRate;
+    protected TextView tvAnalysisVisitRate;
+    protected TextView tvAnalysisInviteRate;
+    /**
+     * 营销费用
+     */
+    protected TextView tvMarketCostsSignNum;
+    protected TextView tvMarketCostsAudioNum;
+    protected TextView tvMarketCostsInfoNum;
     private SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
     private long mLastTime = System.currentTimeMillis(); // 上次设置的时间
     private String birthday;
@@ -154,6 +171,17 @@ public class AnalysisFragment extends BaseFragment implements View.OnClickListen
 
         tvAnalysisSelectStartTime.setText(ObtainSytemTimeUtil.getDateToString(System.currentTimeMillis()));
         tvAnalysisSelectTime.setText(ObtainSytemTimeUtil.getDateToString(System.currentTimeMillis()));
+        tvAnalysisIncreNum = (TextView) rootView.findViewById(R.id.tv_analysis_increNum);
+        tvAnalysisFollowNum = (TextView) rootView.findViewById(R.id.tv_analysis_followNum);
+        tvAnalysisVisitNum = (TextView) rootView.findViewById(R.id.tv_analysis_visitNum);
+        tvAnalysisAudioNum = (TextView) rootView.findViewById(R.id.tv_analysis_audioNum);
+        tvAnalysisSiginNum = (TextView) rootView.findViewById(R.id.tv_analysis_siginNum);
+        tvAnalysisAudioSiginRate = (TextView) rootView.findViewById(R.id.tv_analysis_audioSiginRate);
+        tvAnalysisVisitRate = (TextView) rootView.findViewById(R.id.tv_analysis_visitRate);
+        tvAnalysisInviteRate = (TextView) rootView.findViewById(R.id.tv_analysis_inviteRate);
+        tvMarketCostsSignNum = (TextView) rootView.findViewById(R.id.tv_marketCostsSignNum);
+        tvMarketCostsAudioNum = (TextView) rootView.findViewById(R.id.tv_marketCostsAudioNum);
+        tvMarketCostsInfoNum = (TextView) rootView.findViewById(R.id.tv_marketCostsInfoNum);
     }
 
     /**

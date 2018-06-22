@@ -46,7 +46,8 @@
 
 
         <TextView
-                android:text="签约300人600元/人%"
+                android:id="@+id/tv_marketCostsSignNum"
+                android:text="签约300人600元/人"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textcolor_blue"
@@ -57,7 +58,8 @@
 
 
         <TextView
-                android:text="试听/试读400人400元/人%"
+                android:id="@+id/tv_marketCostsAudioNum"
+                android:text="试听/试读400人400元/人"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textcolor_blue"
@@ -67,7 +69,8 @@
                 android:layout_marginRight="@dimen/marginRight_15"/>
 
         <TextView
-                android:text="获取信息600人300元/人%"
+                android:id="@+id/tv_marketCostsInfoNum"
+                android:text="获取信息600人300元/人"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textcolor_blue"
