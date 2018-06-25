@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import com.base.BaseFragment;
 import com.example.administrator.oper.R;
@@ -72,6 +73,12 @@ public class FinanceFragment extends BaseFragment implements OnChartValueSelecte
     protected LinearLayout llDailyCost;
     protected LinearLayout llLearnCost;
     protected LinearLayout llWageIncomeCost;
+    protected ProgressBar pbConsumedTime;
+    protected TextView tvConsumedTime;
+    protected ProgressBar pbUnexpiredExpenses;
+    protected TextView tvUnexpiredExpenses;
+    protected ProgressBar pbAllInCost;
+    protected TextView tvAllInCost;
     private SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
     private long mLastTime = System.currentTimeMillis(); // 上次设置的时间
     private String birthday;
@@ -192,10 +199,32 @@ public class FinanceFragment extends BaseFragment implements OnChartValueSelecte
         llLearnCost.setOnClickListener(FinanceFragment.this);
         llWageIncomeCost = (LinearLayout) rootView.findViewById(R.id.ll_wageIncomeCost);
         llWageIncomeCost.setOnClickListener(FinanceFragment.this);
+        pbConsumedTime = (ProgressBar) rootView.findViewById(R.id.pb_consumedTime);
+        tvConsumedTime = (TextView) rootView.findViewById(R.id.tv_consumedTime);
+        pbUnexpiredExpenses = (ProgressBar) rootView.findViewById(R.id.pb_unexpiredExpenses);
+        tvUnexpiredExpenses = (TextView) rootView.findViewById(R.id.tv_unexpiredExpenses);
+        pbAllInCost = (ProgressBar) rootView.findViewById(R.id.pb_allInCost);
+        tvAllInCost = (TextView) rootView.findViewById(R.id.tv_allInCost);
     }
 
 
     private void initData() {
+
+        pbConsumedTime.setMax(100);
+        pbConsumedTime.setProgress(60);
+        pbConsumedTime.setSecondaryProgress(60);
+        tvConsumedTime.setText("150万");
+
+        pbUnexpiredExpenses.setMax(100);
+        pbUnexpiredExpenses.setProgress(60);
+        pbUnexpiredExpenses.setSecondaryProgress(40);
+        tvUnexpiredExpenses.setText("90万");
+
+        pbAllInCost.setMax(100);
+        pbAllInCost.setProgress(60);
+        pbAllInCost.setSecondaryProgress(0);
+        tvAllInCost.setText("240万");
+
         tvExpectProfit.setText(new SpanUtils()
                 .append("预计年盈利：")
                 .setForegroundColor(Color.parseColor("#999999"))
@@ -426,14 +455,14 @@ public class FinanceFragment extends BaseFragment implements OnChartValueSelecte
                         llMarketCost.setVisibility(View.VISIBLE);
                         llDailyCost.setVisibility(View.VISIBLE);
                         llLearnCost.setVisibility(View.VISIBLE);
-                        tvWageExpenditure.setText("工资"+item+"+"+"10.5万 14%");
+                        tvWageExpenditure.setText("工资" + item + "+" + "10.5万 14%");
                     } else {
                         initPiecart("总" + item + "\n760000.00 ", 1);
                         llFixedCost.setVisibility(View.GONE);
                         llMarketCost.setVisibility(View.GONE);
                         llDailyCost.setVisibility(View.GONE);
                         llLearnCost.setVisibility(View.GONE);
-                        tvWageExpenditure.setText("工资"+item+"+"+"12.5万 14%");
+                        tvWageExpenditure.setText("工资" + item + "+" + "12.5万 14%");
                     }
                 }
             });

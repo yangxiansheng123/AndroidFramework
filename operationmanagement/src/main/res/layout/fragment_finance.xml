@@ -55,7 +55,7 @@
                         android:layout_marginTop="@dimen/marginTop_10"/>
 
 
-                <LinearLayout
+                <FrameLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -63,15 +63,23 @@
                         android:layout_marginLeft="@dimen/marginLeft_40"
                         android:layout_marginRight="40dp">
                     <ProgressBar
+                            android:id="@+id/pb_consumedTime"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/progressBar"
-                            android:progress="80"
                             android:max="100"
-                            android:secondaryProgress="90"
+                            android:secondaryProgress="60"
                             android:progressDrawable="@drawable/progressdrawable"/>
-                </LinearLayout>
+                    <TextView
+                            android:id="@+id/tv_consumedTime"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/textcolor_ff8208"
+                            android:layout_marginRight="5dp"/>
+                </FrameLayout>
 
                 <TextView
                         android:text="未消费课时"
@@ -83,7 +91,7 @@
                         android:layout_marginTop="@dimen/marginTop_10"/>
 
 
-                <LinearLayout
+                <FrameLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -91,6 +99,7 @@
                         android:layout_marginLeft="@dimen/marginLeft_40"
                         android:layout_marginRight="40dp">
                     <ProgressBar
+                            android:id="@+id/pb_unexpiredExpenses"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -98,7 +107,17 @@
                             android:max="100"
                             android:secondaryProgress="50"
                             android:progressDrawable="@drawable/progressdrawable"/>
-                </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/tv_unexpiredExpenses"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/textcolor_ff8208"
+                            android:layout_marginRight="5dp"/>
+                </FrameLayout>
                 <TextView
                         android:text="总费用"
                         android:layout_width="match_parent"
@@ -109,7 +128,7 @@
                         android:layout_marginTop="@dimen/marginTop_10"/>
 
 
-                <LinearLayout
+                <FrameLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -117,6 +136,7 @@
                         android:layout_marginLeft="@dimen/marginLeft_40"
                         android:layout_marginRight="40dp">
                     <ProgressBar
+                            android:id="@+id/pb_allInCost"
                             style="?android:attr/progressBarStyleHorizontal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -125,7 +145,17 @@
                             android:secondaryProgress="60"
                             android:max="100"
                             android:progressDrawable="@drawable/progressdrawable"/>
-                </LinearLayout>
+
+                    <TextView
+                            android:id="@+id/tv_allInCost"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:textSize="@dimen/text_size_10"
+                            android:textColor="@color/textcolor_ff8208"
+                            android:layout_marginRight="5dp"/>
+                </FrameLayout>
 
                 <View
                         android:layout_width="match_parent"

@@ -44,10 +44,12 @@
 
             <EditText
                     android:layout_width="40dp"
-                      android:layout_height="25dp"
-                      android:background="@drawable/solid_rectangle_shape_gray"
-                      android:gravity="center"
-                    android:inputType="number"/>
+                    android:layout_height="25dp"
+                    android:background="@drawable/solid_rectangle_shape_gray"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size_12"
+                    android:maxLength="4"/>
             <TextView
                     android:text="  天提醒"
                     android:layout_width="0dp"
@@ -88,10 +90,12 @@
 
             <EditText
                     android:layout_width="40dp"
-                      android:layout_height="25dp"
+                    android:layout_height="25dp"
                     android:gravity="center"
                     android:inputType="number"
-                      android:background="@drawable/solid_rectangle_shape_gray"/>
+                    android:background="@drawable/solid_rectangle_shape_gray"
+                    android:textSize="@dimen/text_size_12"
+                    android:maxLength="4"/>
             <TextView
                     android:text="  天提醒"
                     android:layout_width="0dp"

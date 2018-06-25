@@ -101,6 +101,11 @@ public class HomeworkDetailsActivity extends BaseActivity implements View.OnClic
                 .create());
 
         tvTotalCount.setText("总数:30人  ");
+//        tvTotalCount.setText(new SpanUtils()
+//                .append("总数:")
+//                .appendLine()
+//                .append("30人")
+//                .create());
         tvUnpaid.setText("未交:10人 ");
         tvNotChanged.setText("未改:10人");
         tvHaveChanged.setText("已改:10人");
