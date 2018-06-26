@@ -7,6 +7,7 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import com.aspsine.swipetoloadlayout.OnLoadMoreListener;
@@ -46,6 +47,8 @@ public class WaitForClassActivity extends BaseActivity {
     private boolean isFirse = true;
     private List<WaitForClassBean> listData = new ArrayList<>();
     private WaitForClassAdapter mWaitForClassAdapter;
+    private LayoutInflater mInflater;
+    private View viewFoot;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -70,6 +73,8 @@ public class WaitForClassActivity extends BaseActivity {
      * 初始化控件
      */
     private void initView() {
+        mInflater = LayoutInflater.from(this);
+        viewFoot = mInflater.inflate(R.layout.activity_head_footer_view, null);
         mToolbarTitle = (TextView) findViewById(R.id.toolbar_title);
         mToolbarTitle.setText(getString(R.string.title_activity_wait_for_class));
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -87,6 +92,7 @@ public class WaitForClassActivity extends BaseActivity {
 
         //话题
         mWaitForClassAdapter = new WaitForClassAdapter(R.layout.activity_wait_for_class_pattern, listData, this);
+        mWaitForClassAdapter.addHeaderView(viewFoot);
         mSwipeTarget.setAdapter(mWaitForClassAdapter);
         mSwipeToLoad.setOnRefreshListener(new OnRefreshListener() {
             @Override

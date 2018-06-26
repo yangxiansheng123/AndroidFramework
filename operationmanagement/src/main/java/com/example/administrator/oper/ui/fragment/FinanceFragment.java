@@ -261,7 +261,7 @@ public class FinanceFragment extends BaseFragment implements OnChartValueSelecte
         /**
          * //设置显示成比例
          */
-        mPiechart.setUsePercentValues(true);
+        mPiechart.setUsePercentValues(false);
         mPiechart.getDescription().setEnabled(false);
         mPiechart.setExtraOffsets(5, 10, 5, 5);
         /**

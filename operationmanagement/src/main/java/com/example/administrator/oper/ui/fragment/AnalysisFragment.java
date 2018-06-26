@@ -259,13 +259,14 @@ public class AnalysisFragment extends BaseFragment implements View.OnClickListen
         /**
          * //设置显示成比例
          */
-        mPiechart.setUsePercentValues(true);
+        mPiechart.setUsePercentValues(false);
         mPiechart.getDescription().setEnabled(false);
         mPiechart.setExtraOffsets(5, 10, 5, 5);
         /**
          * 设置隐藏饼图上文字，只显示百分比
          */
         mPiechart.setDrawSliceText(false);
+        mPiechart.setDrawEntryLabels(false);
         mPiechart.setDragDecelerationFrictionCoef(0.95f);
         mPiechart.setCenterText(generateCenterSpannableText());
 

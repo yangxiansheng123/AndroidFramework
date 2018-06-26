@@ -86,7 +86,7 @@ public class WaitForClassAdapter extends BaseQuickAdapter<WaitForClassBean, Base
     @Override
     public void onBindViewHolder(BaseViewHolder holder, int positions) {
         super.onBindViewHolder(holder, positions);
-        if (0 == positions) {
+        if (1 == positions) {
             fl_waitForClassBg.setBackgroundResource(R.drawable.solid_shape_white_top_left_right);
         } else if (listData.size() - 1 == positions) {
             fl_waitForClassBg.setBackgroundResource(R.drawable.solid_shape_white_bootom_lright);
